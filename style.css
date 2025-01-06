@@ -209,10 +209,6 @@ nav .menu-button {
     max-width: 378px;
 }
 
-.container-grid h3 {
-
-}
-
 .container-grid p {
     font-size: 1rem;
 }
@@ -308,7 +304,7 @@ nav .menu-button {
     font-size: 1.6rem;
 }
 
-#page-clickcollect form {
+#page-clickcollect .form-commencer {
     align-items: center !important;
     justify-content: center !important;
 }
@@ -321,6 +317,31 @@ nav .menu-button {
     color: white;
     font-family: 'Roboto', 'sans-serif';
     font-size: 2rem;
+}
+
+#form-clickcollect {
+    display: flex;
+    flex-direction: column;
+    align-items:flex-start;
+    justify-content: space-between;
+}
+
+#form-clickcollect .produit {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+#form-clickcollect .produit .container-img {
+    min-width: 200px;
+    width: 200px;
+    min-height: 200px;
+    height: 200px;
+    overflow: hidden;
+}
+
+#form-clickcollect .produit img {
+    width: 100%;
 }
 
 /* //////////////////////////////////////////////////     FOOTER      ////////////////////// */
