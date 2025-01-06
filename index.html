@@ -10,30 +10,32 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
 </head>
 <body id="page-home">
-    <header>
-        <nav>
-            <div class="container">
-                <img src="img/logo.png">
-                <ul>
-                    <li><button>Click & Collect</button></li>
-                    <li><button>Livraison</button></li>
-                </ul>
-                <ul>
-                    <li><a href="">La Carte</a></li>
-                    <li><a href="">Titi Story</a></li>
-                    <li><a href="">Le resto</a></li>
-                    <li><a href="">Actus</a></li>
-                    <li><a href="">Réserver</a></li>
-                </ul>
-            </div>
-        </nav>
-        <div class="container-banner">
-            <div class="contenu-banner container">
-                
-            </div>
-        </div>
-    </header>
     <main>
+        <header>
+            <nav>
+                <div class="container">
+                    <img src="assets/images/logo.svg">
+                    <div id="menu">
+                        <ul>
+                            <li><button>Click & Collect</button></li>
+                            <li><button>Livraison</button></li>
+                        </ul>
+                        <ul>
+                            <li><a href="">La Carte</a></li>
+                            <li><a href="">Titi Story</a></li>
+                            <li><a href="">Le resto</a></li>
+                            <li><a href="">Actus</a></li>
+                            <li><a href="">Réserver</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            <div class="container-banner">
+                <div class="contenu-banner container">
+                    
+                </div>
+            </div>
+        </header>
         <section id="partie-resto">
             <div class="container">
                 <div>
@@ -84,9 +86,49 @@
                 </div>
             </div>
         </section>
+        <section id="partie-newsletter">
+            <div class="container">
+                <form>
+                    <div>
+                        <h2>Inscription à Newsletter</h2>
+                        <input type="email" id="mail" name="mail" placeholder="Votre Email"></input>
+                        <button id="button-send" type="button"><i class="fa-solid fa-paper-plane"></i></button>
+                    </div>
+                    <label for="email">Des Offres et des actus chaque semaine sur titi Burger</label>
+                </form>
+            </div>
+        </section>
         <footer>
-
+            <div class="container">
+                <ul>
+                    <li><a href=""><h4>Mention Légales</h4></a></li>
+                    <li><a href="">CGU</a></li>
+                    <li><a href="">CGV</a></li>
+                </ul>
+                <ul>
+                    <li><h4>Plan du site</h4></li>
+                    <li><a href="">La carte</a></li>
+                    <li><a href="">Titi Story</a></li>
+                    <li><a href="">Le resto</a></li>
+                    <li><a href="">Actu</a></li>
+                </ul>
+                <div>
+                    <h4>Où nous trouver ?</h4>
+                    <img src="assets/images/plan.jpg">
+                </div>
+                <ul>
+                    <li><h4><a href="">Contact</a></h4></li>
+                    <li><a href="">Où nous trouver ?</a></li>
+                    <li><a href="">FAQ</a></li>
+                </ul>
+                <ul id="partie-social-media">
+                    <i class="fa-brands fa-facebook"></i>
+                    <i class="fa-brands fa-instagram"></i>
+                    <i class="fa-brands fa-linkedin"></i>
+                </ul>
+            </div>
         </footer>
     </main>
+    <script src="https://kit.fontawesome.com/851065c4c4.js" crossorigin="anonymous"></script>
 </body>
 </html>
