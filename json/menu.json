@@ -42,23 +42,30 @@
                 "articles": [
                     {  
                         "nom": "Jus de Citron",
+                        "id": "jus-citron",
                         "prix": "3",
-                        "image": "./assets/images/hamburger-noir.jpg",
+                        "image": "./assets/images/limonade.jpg",
                         "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Enim mi at ultrices praesent posuere sit. Pulvinar."
                     },
                     {  
                         "nom": "Coca Cola",
+                        "id": "coca-cola",
                         "prix": "2.5",
+                        "image": "./assets/images/coca-cola.jpg",
                         "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Enim mi at ultrices praesent posuere sit. Pulvinar."
                     },
                     {  
-                        "nom": "Eau",
-                        "prix": "2",
+                        "nom": "Limonade-menthe",
+                        "id": "limonade-menthe",
+                        "prix": "3",
+                        "image": "./assets/images/limonade-menthe.jpg",
                         "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Enim mi at ultrices praesent posuere sit. Pulvinar."
                     },
                     {  
                         "nom": "Jus de Pomme",
+                        "id": "jus-pomme",
                         "prix": "3",
+                        "image": "./assets/images/jus-de-pomme.jpeg",
                         "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Enim mi at ultrices praesent posuere sit. Pulvinar."
                     }
                 ]
@@ -69,22 +76,30 @@
                 "articles": [
                     {  
                         "nom": "Frites",
+                        "id": "frites",
                         "prix": "3.5",
+                        "image": "./assets/images/frites.jpg",
                         "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Enim mi at ultrices praesent posuere sit. Pulvinar."
                     },
                     {  
                         "nom": "Frites de patates douces",
+                        "id": "frites-patates-douces",
                         "prix": "4.5",
+                        "image": "./assets/images/frites-patate-douce.jpg",
                         "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Enim mi at ultrices praesent posuere sit. Pulvinar."
                     },
                     {  
                         "nom": "Salade",
+                        "id": "salade",
                         "prix": "4.5",
+                        "image": "./assets/images/salade.jpg",
                         "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Enim mi at ultrices praesent posuere sit. Pulvinar."
                     },
                     {  
                         "nom": "Maïs frit",
+                        "id": "mais-frit",
                         "prix": "5",
+                        "image": "./assets/images/mais.jpg",
                         "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Enim mi at ultrices praesent posuere sit. Pulvinar."
                     }
                 ]
@@ -95,22 +110,30 @@
                 "articles": [
                     {  
                         "nom": "Muffins",
+                        "id": "muffins",
                         "prix": "3.5",
+                        "image": "./assets/images/muffin.jpg",
                         "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Enim mi at ultrices praesent posuere sit. Pulvinar."
                     },
                     {  
-                        "nom": "Tiramitsu",
+                        "nom": "Tiramisu",
+                        "id": "tiramisu",
                         "prix": "5",
+                        "image": "./assets/images/tiramisu.jpg",
                         "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Enim mi at ultrices praesent posuere sit. Pulvinar."
                     },
                     {  
                         "nom": "Gauffres",
+                        "id": "gauffres",
                         "prix": "3",
+                        "image": "./assets/images/gauffres.jpg",
                         "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Enim mi at ultrices praesent posuere sit. Pulvinar."
                     },
                     {  
-                        "nom": "Crêpes",
+                        "nom": "Pancakes",
+                        "id": "pancakes",
                         "prix": "3",
+                        "image": "./assets/images/pancakes.jpg",
                         "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Enim mi at ultrices praesent posuere sit. Pulvinar."
                     }
                 ]

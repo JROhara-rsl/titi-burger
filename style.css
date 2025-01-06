@@ -205,12 +205,30 @@ nav .menu-button {
     grid-template-columns: 1fr 1fr 1fr;
 }
 
+.container-grid .child-grid {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 .container-grid .child-grid img {
     max-width: 378px;
 }
 
+.container-grid .child-grid h3 {
+    font-size: 1.5rem;
+    font-weight: 300;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
 .container-grid p {
     font-size: 1rem;
+}
+
+.container-grid .child-grid button {
+    background-color: var(--color-sombre);
+    color: white;
 }
 
 /* //////// -----------     NEWSLETTER     ---------- */
@@ -329,7 +347,8 @@ nav .menu-button {
 #form-clickcollect .produit {
     display: flex;
     flex-direction: row;
-    align-items: center;
+    align-items:center;
+    justify-content: space-between;
 }
 
 #form-clickcollect .produit .container-img {
@@ -342,6 +361,10 @@ nav .menu-button {
 
 #form-clickcollect .produit img {
     width: 100%;
+}
+
+#form-clickcollect .produit p, #form-clickcollect .produit h2 {
+    width: 30%;
 }
 
 /* //////////////////////////////////////////////////     FOOTER      ////////////////////// */
