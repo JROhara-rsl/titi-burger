@@ -7,6 +7,21 @@
     --color-noir: #000;
 }
 
+
+/* //////// -----------     FONT     ---------- */
+
+@font-face {
+    font-family: 'homeday';
+    src: url('assets/fonts/homeday/homeday-webfont.woff2') format('woff2'),
+         url('assets/fonts/homeday/homeday-webfont.woff') format('woff'),
+         url('assets/fonts/homeday/homeday.ttf') format('ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+/* //////// -----------     BASE     ---------- */
+
 html {
     font-size: 16px;
 }
@@ -26,17 +41,46 @@ main {  width: 100%;    }
     margin: 0 auto;
 }
 
-/* //////// -----------     FONT     ---------- */
-
-
-@font-face {
-    font-family: 'homedayregular';
-    src: url('assets/fonts/homeday/homeday-webfont.woff2') format('woff2'),
-         url('assets/fonts/homeday/homeday-webfont.woff') format('woff'),
-         url('assets/fonts/homeday/homeday.ttf') format('ttf');
-    font-weight: normal;
-    font-style: normal;
+h1 {
+    font-family: 'Homeday', 'roboto', 'sans-serif';
+    font-size: 3rem;
+    color: var(--color-base);
 }
+
+h2 {
+    font-family: 'Homeday', 'roboto', 'sans-serif';
+    font-size: 3rem;
+    color: var(--color-base);
+}
+
+h3 {
+    font-family: 'Roboto', 'sans serif';
+    font-size: 2rem;
+    color: var(--color-sombre);
+}
+
+p {
+    font-family: 'Roboto', 'sans serif';
+    font-size: 2rem;
+    color: var(--color-gris);
+}
+
+button {
+    padding: 12px 20px;
+    border-radius: 4px;
+}
+
+.container  {
+    display: flex;
+    flex-direction: column;
+}
+
+.container-texte {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+}
+
 
 /* //////////////////////////////////////////////////     HEADER / NAV      ////////////////////// */
 
@@ -98,8 +142,27 @@ nav li a:hover {
 
 /* //////////////////////////////////////////////////     HOMEPAGE      ////////////////////// */
 
+#partie-resto .container  {
+    flex-direction: row;
+}
+
+#partie-resto img {
+    max-width: 446px;
+}
+
 /* //////// -----------     ACTUALITÉ     ---------- */
+
+.container-grid {
+    display: grid;
+    gap: 60px;
+    grid-template-columns: 1fr 1fr 1fr;
+}
 
 .container-grid .child-grid img {
     max-width: 378px;
 }
+
+.container-grid p {
+    font-size: 1rem;
+}
+
