@@ -1,0 +1,84 @@
+/* //////////////////////////////////////////////////     GÉNÉRAL      ////////////////////// */
+
+:root { 
+	--color-base: #D9ADD6;
+    --color-gris: #979797;
+    --color-sombre: #4A4C50;
+    --color-noir: #000;
+}
+
+html {
+    font-size: 12px;
+}
+
+body {
+    margin: 0;
+    width: 100%;
+    background-color: var(--color-background);
+}
+
+main {  width: 100%;    }
+
+.container {
+    width: 100%;
+    max-width: 1280px;
+    padding: 0;
+    margin: 0 auto;
+}
+
+/* //////////////////////////////////////////////////     HEADER / NAV      ////////////////////// */
+
+header {
+    width: 100%;   
+    height: auto;
+    margin-bottom: 0;
+    z-index: 5;
+}
+
+nav {
+    position: fixed;
+    width: 100%;
+    z-index: 2;
+    padding: 15px 0px;
+}
+
+nav .container {
+    max-width: 1280px;
+    display: flex;
+    justify-content: space-between;
+}
+
+nav img {
+    max-width: 140px;
+}
+
+
+nav ul {
+	list-style-type: none;
+	display:flex;
+    float: right;
+    margin: 0 25px;
+    padding: 0;
+}
+
+nav li {
+    padding: 10px 20px;
+}
+
+nav li a {
+    color: var(--color-clair);
+}
+
+nav li a:hover {
+    color: var(--color-rose);
+    text-decoration: none;
+}
+
+.container-banner {
+    position: relative;
+    width: 100%; 
+    padding-top: 56.25%; 
+    overflow: hidden;
+}
+
+#page-home .container-banner {   background: url('assets/images/banniere.png'); background-size: cover;   }
