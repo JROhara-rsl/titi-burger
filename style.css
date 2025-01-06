@@ -8,7 +8,7 @@
 }
 
 html {
-    font-size: 12px;
+    font-size: 16px;
 }
 
 body {
@@ -24,6 +24,18 @@ main {  width: 100%;    }
     max-width: 1280px;
     padding: 0;
     margin: 0 auto;
+}
+
+/* //////// -----------     FONT     ---------- */
+
+
+@font-face {
+    font-family: 'homedayregular';
+    src: url('assets/fonts/homeday/homeday-webfont.woff2') format('woff2'),
+         url('assets/fonts/homeday/homeday-webfont.woff') format('woff'),
+         url('assets/fonts/homeday/homeday.ttf') format('ttf');
+    font-weight: normal;
+    font-style: normal;
 }
 
 /* //////////////////////////////////////////////////     HEADER / NAV      ////////////////////// */
@@ -82,3 +94,12 @@ nav li a:hover {
 }
 
 #page-home .container-banner {   background: url('assets/images/banniere.png'); background-size: cover;   }
+
+
+/* //////////////////////////////////////////////////     HOMEPAGE      ////////////////////// */
+
+/* //////// -----------     ACTUALITÉ     ---------- */
+
+.container-grid .child-grid img {
+    max-width: 378px;
+}
