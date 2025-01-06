@@ -40,7 +40,7 @@ main {  width: 100%;    }
 
 .container {
     width: 100%;
-    max-width: 1280px;
+    max-width: 1260px;
     padding: 0;
     margin: 0 auto;
 }
@@ -166,6 +166,7 @@ nav li a:hover {
 
 #partie-resto .container  {
     flex-direction: row;
+    gap: 74px;
 }
 
 #partie-resto img {
@@ -184,6 +185,10 @@ nav li a:hover {
     max-width: 378px;
 }
 
+.container-grid h3 {
+
+}
+
 .container-grid p {
     font-size: 1rem;
 }
@@ -192,12 +197,12 @@ nav li a:hover {
 
 #partie-newsletter {
     background-color: var(--color-gris-clair);
-    padding: 40px 0;
     margin: 0;
+    padding: 50px 0;
 }
 
-#partie-newsletter .container {
-    margin: 60px auto;
+#partie-newsletter .container .container-newsletter {
+    margin: 0 50px;
     background-color: var(--color-bleu);
     border-radius: 7px;
     padding: 30px 25px;
@@ -209,9 +214,25 @@ nav li a:hover {
     justify-content: space-between;
 }
 
+#partie-newsletter .container form div {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+#partie-newsletter .container .newsletter-input {
+    display: flex;
+    flex-direction: row;
+}
+
 #partie-newsletter .container form input {
     width: 415px;
     height: 70px;
+}
+
+#partie-newsletter .container form button {
+    width: 80px;
+    height: 77px;
 }
 
 #partie-newsletter h2 {
@@ -223,6 +244,7 @@ nav li a:hover {
 #partie-newsletter label {
     font-size: 2rem;
     color: white;
+    width: 45%;
 }
 
 #partie-social-media {
