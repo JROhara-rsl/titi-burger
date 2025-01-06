@@ -249,12 +249,12 @@ nav .menu-button {
     flex-direction: row;
 }
 
-#partie-bloc .container form input {
+#partie-bloc .container form .newsletter-input input {
     width: 415px;
     height: 70px;
 }
 
-#partie-bloc .container form button {
+#partie-bloc .container form .newsletter-input button {
     width: 80px;
     height: 77px;
 }
@@ -306,6 +306,21 @@ nav .menu-button {
 
 #page-clickcollect p {
     font-size: 1.6rem;
+}
+
+#page-clickcollect form {
+    align-items: center !important;
+    justify-content: center !important;
+}
+
+#button-clickcollect {
+    width: 456px;
+    height: 90px;
+    background-color: var(--color-base);
+    border: 0px solid;
+    color: white;
+    font-family: 'Roboto', 'sans-serif';
+    font-size: 2rem;
 }
 
 /* //////////////////////////////////////////////////     FOOTER      ////////////////////// */
