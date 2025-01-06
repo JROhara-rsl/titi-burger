@@ -108,7 +108,7 @@ header {
 }
 
 nav {
-    position: fixed;
+    position: absolute;
     width: 100%;
     z-index: 2;
     padding: 15px 0px;
@@ -129,6 +129,8 @@ nav #menu {
     display: flex;
     flex-direction: column;
     align-items: flex-end;
+    gap: 15px;
+    margin: 15px 0;
 }
 
 nav ul {
@@ -144,7 +146,13 @@ nav li {
 }
 
 nav li a {
-    color: var(--color-clair);
+    color: var(--color-bleu);
+    text-decoration: none;
+    font-size: 1.4rem;
+}
+
+nav.font-white li a {
+    color: white;
 }
 
 nav li a:hover {
@@ -152,14 +160,28 @@ nav li a:hover {
     text-decoration: none;
 }
 
+nav .menu-button { 
+    padding: 12px 20px;
+    border-radius: 4px;
+    color: white;
+    background-color: var(--color-base);
+}
+
 .container-banner {
     position: relative;
     width: 100%; 
-    padding-top: 56.25%; 
     overflow: hidden;
 }
 
-#page-home .container-banner {   background: url('assets/images/banniere.png'); background-size: cover;   }
+#page-home .container-banner {   
+    padding-top: 56.25%; 
+    background: url('assets/images/banniere.png'); 
+    background-size: cover;   
+}
+
+#page-clickcollect .container-banner {
+    padding-top: 10%; 
+}
 
 
 /* //////////////////////////////////////////////////     HOMEPAGE      ////////////////////// */
@@ -195,53 +217,53 @@ nav li a:hover {
 
 /* //////// -----------     NEWSLETTER     ---------- */
 
-#partie-newsletter {
+#partie-bloc {
     background-color: var(--color-gris-clair);
     margin: 0;
     padding: 50px 0;
 }
 
-#partie-newsletter .container .container-newsletter {
+#partie-bloc .container .container-bloc {
     margin: 0 50px;
     background-color: var(--color-bleu);
     border-radius: 7px;
     padding: 30px 25px;
 }
 
-#partie-newsletter .container form {
+#partie-bloc .container form {
     display: flex;
     flex-direction: row-reverse;
     justify-content: space-between;
 }
 
-#partie-newsletter .container form div {
+#partie-bloc .container form div {
     display: flex;
     flex-direction: column;
     align-items: flex-end;
 }
 
-#partie-newsletter .container .newsletter-input {
+#partie-bloc .container .newsletter-input {
     display: flex;
     flex-direction: row;
 }
 
-#partie-newsletter .container form input {
+#partie-bloc .container form input {
     width: 415px;
     height: 70px;
 }
 
-#partie-newsletter .container form button {
+#partie-bloc .container form button {
     width: 80px;
     height: 77px;
 }
 
-#partie-newsletter h2 {
+#partie-bloc h2 {
     font-family: 'Roboto', 'sans serif';
     font-size: 2rem;
     font-weight: 300;
 }
 
-#partie-newsletter label {
+#partie-bloc label {
     font-size: 2rem;
     color: white;
     width: 45%;
@@ -257,6 +279,32 @@ nav li a:hover {
     margin: 5px;
 }
 
+/* //////////////////////////////////////////////////     CLICK & COLLECT      ////////////////////// */
+
+#partie-clickcollect .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 720px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+#page-clickcollect h1 {
+    font-size: 5rem;
+}
+
+#page-clickcollect h2 {
+    font-family: 'Roboto', 'sans-serif';
+    font-size: 3rem;
+    font-weight: 400;
+    color: var(--color-sombre)
+}
+
+#page-clickcollect p {
+    font-size: 1.6rem;
+}
 
 /* //////////////////////////////////////////////////     FOOTER      ////////////////////// */
 
