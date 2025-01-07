@@ -15,7 +15,7 @@
                         "__v": 0
                     },
                     {  
-                        "nom": "L'original Titi'",
+                        "nom": "L'Original Titi",
                         "id": "original-tit",
                         "price": "12",
                         "image": "./assets/images/hamburger-cheese.jpg",
@@ -79,7 +79,7 @@
             }],
             "accompagnement": [
             {
-                "nom": "Accompagnement",
+                "nom": "accompagnement",
                 "articles": [
                     {  
                         "nom": "Frites",
