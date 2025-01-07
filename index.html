@@ -23,9 +23,9 @@
                             <li><a class="menu-button" href="html/livraison.html">Livraison</a></li>
                         </ul>
                         <ul>
-                            <li><a href="#partie-resto">La Carte</a></li>
-                            <li><a href="#partie-story">Titi Story</a></li>
                             <li><a href="#partie-resto">Le resto</a></li>
+                            <li><a href="#partie-story">Titi Story</a></li>  
+                            <li><a href="#partie-burger">La Carte</a></li>
                             <li><a href="#partie-actu">Actus</a></li>
                             <li><a href="#partie-contact">Réserver</a></li>
                         </ul>
@@ -34,17 +34,18 @@
             </nav>
             <div class="container-banner">
                 <div class="contenu-banner container">
-        
+                    <h1>Commander chez Titi Burger !</h1>
+                    <a class="menu-button" href="html/clickcollect.html">Commander</a>
                 </div>
             </div>
         </header>
         <section id="partie-resto">
             <div class="container">
                 <div>
-                    <h1>Le Resto</h1>
+                    <h2>Le Resto</h2>
                     <img src="assets/images/le-resto.png">
                 </div>
-                <div class="container-text">
+                <div id="partie-story" class="container-text">
                     <h2>Titi Story</h2>
                     <h3>Une équipe Authentique</h3>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus asperiores possimus dolores sed fuga nam sint, itaque odio quaerat maiores dicta dolor quisquam aspernatur molestiae. Iusto autem in temporibus numquam.</p>
@@ -52,37 +53,80 @@
                 </div>
             </div>
         </section>
-        <section id="partie-story">
+        <section id="partie-burger">
             <div class="container">
                 <div class="container-text">
-                    <h2>Titi Story</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor optio nulla dolorum quibusdam quod rerum, quae magni inventore nisi provident omnis doloribus deserunt voluptatibus commodi quis modi cupiditate minus magnam!</p>
+                    <h2>Nos burger</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Enim mi at ultrices praesent posuere sit. Pulvinar </p>
                 </div>
-                <div class="wrapper-carrousel">
-
+                <div class="wrapper-carousel">
+                    <i id="left" class="fa-solid fa-angle-left"></i>
+                    <div class="carousel">
+                        <div class="child-item" draggable="false">
+                            <div class="container-img">
+                                <img src="assets/images/hamburger-cheese.jpg">
+                            </div>
+                            <h3>L'original Titi</h3>
+                        </div>
+                        <div class="child-item" draggable="false">
+                            <div class="container-img">
+                                <img src="assets/images/hamburger-double.jpg">
+                            </div>
+                            <h3>Le Big big</h3>
+                        </div>
+                        <div class="child-item" draggable="false">
+                            <div class="container-img">
+                                <img src="assets/images/hamburger-vegetal.jpg">
+                            </div>
+                            <h3>Le Veggie burger</h3>
+                        </div>
+                        <div class="child-item" draggable="false">
+                            <div class="container-img">
+                                <img src="assets/images/hamburger-noir.jpg">
+                            </div>
+                            <h3>Le Dark Burger</h3>
+                        </div>
+                        <div class="child-item" draggable="false">
+                            <div class="container-img">
+                                <img src="assets/images/frites.jpg">
+                            </div>
+                            <h3>Les frites</h3>
+                        </div>
+                        <div class="child-item" draggable="false">
+                            <div class="container-img">
+                                <img src="assets/images/salade.jpg">
+                            </div>
+                            <h3>La salade</h3>
+                        </div>
+                    </div>
+                    <i id="right" class="fa-solid fa-angle-right"></i>
                 </div>
             </div>
         </section>
         <section id="partie-actu">
             <div class="container">
-                <h2>Actus</h2>
+                <header>
+                    <div></div>
+                    <h2>Actus</h2>
+                    <div></div>
+                </header>
                 <div class="container-grid">
                     <div class="child-grid">
                         <h3>Notre dark Titi arrive</h3>
                         <img src="assets/images/hamburger-noir.jpg">
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium dicta velit maiores blanditiis harum, rerum asperiores eos quis ea. Tenetur sequi quisquam dolore aut, debitis consequuntur nisi aliquid saepe beatae.</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Enim mi at ultrices praesent posuere sit. Pulvinar </p>
                         <button>En savoir +</button>
                     </div>
                     <div class="child-grid">
                         <h3>Des cocktails sur mesure</h3>
                         <img src="assets/images/cocktail.jpg">
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium dicta velit maiores blanditiis harum, rerum asperiores eos quis ea. Tenetur sequi quisquam dolore aut, debitis consequuntur nisi aliquid saepe beatae.</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Enim mi at ultrices praesent posuere sit. Pulvinar </p>
                         <button>En savoir +</button>
                     </div>
                     <div class="child-grid">
                         <h3>Une ambiance authetique</h3>
                         <img src="assets/images/ambiance.jpg">
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium dicta velit maiores blanditiis harum, rerum asperiores eos quis ea. Tenetur sequi quisquam dolore aut, debitis consequuntur nisi aliquid saepe beatae.</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Enim mi at ultrices praesent posuere sit. Pulvinar </p>
                         <button>En savoir +</button>
                     </div>
                 </div>
@@ -136,5 +180,6 @@
         </footer>
     </main>
     <script src="https://kit.fontawesome.com/851065c4c4.js" crossorigin="anonymous"></script>
+    <script src="js/carousel.js" type=""></script>
 </body>
 </html>

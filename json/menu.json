@@ -9,30 +9,33 @@
                     {  
                         "nom": "Le Dark Burger",
                         "id": "dark-burger",
-                        "prix": "13",
+                        "price": "13",
                         "image": "./assets/images/hamburger-noir.jpg",
-                        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Enim mi at ultrices praesent posuere sit. Pulvinar."
+                        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Enim mi at ultrices praesent posuere sit. Pulvinar.",
+                        "__v": 0
                     },
                     {  
                         "nom": "L'original Titi'",
                         "id": "original-tit",
-                        "prix": "12",
+                        "price": "12",
                         "image": "./assets/images/hamburger-cheese.jpg",
-                        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Enim mi at ultrices praesent posuere sit. Pulvinar."
+                        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Enim mi at ultrices praesent posuere sit. Pulvinar.",
+                        "__v": 0
                     },
                     {  
                         "nom": "Veggie Burger",
                         "id": "veggie-burger",
-                        "prix": "11.5",
+                        "price": "11.5",
                         "image": "./assets/images/hamburger-vegetal.jpg",
                         "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Enim mi at ultrices praesent posuere sit. Pulvinar."
                     },
                     {  
                         "nom": "Le Big Big",
                         "id": "big-burger",
-                        "prix": "14",
+                        "price": "14",
                         "image": "./assets/images/hamburger-double.jpg",
-                        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Enim mi at ultrices praesent posuere sit. Pulvinar."
+                        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Enim mi at ultrices praesent posuere sit. Pulvinar.",
+                        "__v": 0
                     }
                 ]
             }],
@@ -43,30 +46,34 @@
                     {  
                         "nom": "Jus de Citron",
                         "id": "jus-citron",
-                        "prix": "3",
+                        "price": "3",
                         "image": "./assets/images/limonade.jpg",
-                        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Enim mi at ultrices praesent posuere sit. Pulvinar."
+                        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Enim mi at ultrices praesent posuere sit. Pulvinar.",
+                        "__v": 0
                     },
                     {  
                         "nom": "Coca Cola",
                         "id": "coca-cola",
-                        "prix": "2.5",
+                        "price": "2.5",
                         "image": "./assets/images/coca-cola.jpg",
-                        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Enim mi at ultrices praesent posuere sit. Pulvinar."
+                        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Enim mi at ultrices praesent posuere sit. Pulvinar.",
+                        "__v": 0
                     },
                     {  
                         "nom": "Limonade-menthe",
                         "id": "limonade-menthe",
-                        "prix": "3",
+                        "price": "3",
                         "image": "./assets/images/limonade-menthe.jpg",
-                        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Enim mi at ultrices praesent posuere sit. Pulvinar."
+                        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Enim mi at ultrices praesent posuere sit. Pulvinar.",
+                        "__v": 0
                     },
                     {  
                         "nom": "Jus de Pomme",
                         "id": "jus-pomme",
-                        "prix": "3",
+                        "price": "3",
                         "image": "./assets/images/jus-de-pomme.jpeg",
-                        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Enim mi at ultrices praesent posuere sit. Pulvinar."
+                        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Enim mi at ultrices praesent posuere sit. Pulvinar.",
+                        "__v": 0
                     }
                 ]
             }],
@@ -77,30 +84,34 @@
                     {  
                         "nom": "Frites",
                         "id": "frites",
-                        "prix": "3.5",
+                        "price": "3.5",
                         "image": "./assets/images/frites.jpg",
-                        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Enim mi at ultrices praesent posuere sit. Pulvinar."
+                        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Enim mi at ultrices praesent posuere sit. Pulvinar.",
+                        "__v": 0
                     },
                     {  
                         "nom": "Frites de patates douces",
                         "id": "frites-patates-douces",
-                        "prix": "4.5",
+                        "price": "4.5",
                         "image": "./assets/images/frites-patate-douce.jpg",
-                        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Enim mi at ultrices praesent posuere sit. Pulvinar."
+                        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Enim mi at ultrices praesent posuere sit. Pulvinar.",
+                        "__v": 0
                     },
                     {  
                         "nom": "Salade",
                         "id": "salade",
-                        "prix": "4.5",
+                        "price": "4.5",
                         "image": "./assets/images/salade.jpg",
-                        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Enim mi at ultrices praesent posuere sit. Pulvinar."
+                        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Enim mi at ultrices praesent posuere sit. Pulvinar.",
+                        "__v": 0
                     },
                     {  
                         "nom": "Maïs frit",
                         "id": "mais-frit",
-                        "prix": "5",
+                        "price": "5",
                         "image": "./assets/images/mais.jpg",
-                        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Enim mi at ultrices praesent posuere sit. Pulvinar."
+                        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Enim mi at ultrices praesent posuere sit. Pulvinar.",
+                        "__v": 0
                     }
                 ]
             }],
@@ -111,30 +122,34 @@
                     {  
                         "nom": "Muffins",
                         "id": "muffins",
-                        "prix": "3.5",
+                        "price": "3.5",
                         "image": "./assets/images/muffin.jpg",
-                        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Enim mi at ultrices praesent posuere sit. Pulvinar."
+                        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Enim mi at ultrices praesent posuere sit. Pulvinar.",
+                        "__v": 0
                     },
                     {  
                         "nom": "Tiramisu",
                         "id": "tiramisu",
-                        "prix": "5",
+                        "price": "5",
                         "image": "./assets/images/tiramisu.jpg",
-                        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Enim mi at ultrices praesent posuere sit. Pulvinar."
+                        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Enim mi at ultrices praesent posuere sit. Pulvinar.",
+                        "__v": 0
                     },
                     {  
                         "nom": "Gauffres",
                         "id": "gauffres",
-                        "prix": "3",
+                        "price": "3",
                         "image": "./assets/images/gauffres.jpg",
-                        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Enim mi at ultrices praesent posuere sit. Pulvinar."
+                        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Enim mi at ultrices praesent posuere sit. Pulvinar.",
+                        "__v": 0
                     },
                     {  
                         "nom": "Pancakes",
                         "id": "pancakes",
-                        "prix": "3",
+                        "price": "3",
                         "image": "./assets/images/pancakes.jpg",
-                        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Enim mi at ultrices praesent posuere sit. Pulvinar."
+                        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Enim mi at ultrices praesent posuere sit. Pulvinar.",
+                        "__v": 0
                     }
                 ]
             }]

@@ -7,6 +7,7 @@
     --color-sombre: #4A4C50;
     --color-noir: #000;
     --color-bleu: #576D8B;
+    --color-bleu-clair: #576d8b87;
     --color-bleu-sombre: #102940;
 }
 
@@ -49,9 +50,10 @@ main {  width: 100%;    }
 
 h1 {
     font-family: 'Homeday', 'roboto', 'sans-serif';
-    font-size: 3rem;
+    font-size: 5rem;
     color: var(--color-base);
     margin: 0;
+    font-weight: 100;
 }
 
 h2 {
@@ -59,6 +61,7 @@ h2 {
     font-size: 3rem;
     color: var(--color-base);
     margin: 0;
+    font-weight: 100;
 }
 
 h3 {
@@ -78,6 +81,7 @@ p {
     font-family: 'Roboto', 'sans serif';
     font-size: 2rem;
     color: var(--color-gris);
+    margin: 10px 0;
 }
 
 button {
@@ -162,11 +166,12 @@ nav li a:hover {
     text-decoration: none;
 }
 
-nav .menu-button { 
+nav .menu-button, .contenu-banner a { 
     padding: 12px 20px;
     border-radius: 4px;
     color: white;
     background-color: var(--color-base);
+    text-decoration: none;
 }
 
 .container-banner {
@@ -185,6 +190,28 @@ nav .menu-button {
     padding-top: 10%; 
 }
 
+.contenu-banner {
+    position: absolute;
+    top: 10%;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    padding: 60px;
+}
+
+.contenu-banner h1 {
+    color:white;
+}
+
+.contenu-banner a {
+    font-size: 2rem;
+    margin-top: 20px;
+}
+
 
 /* //////////////////////////////////////////////////     HOMEPAGE      ////////////////////// */
 
@@ -197,12 +224,95 @@ nav .menu-button {
     max-width: 446px;
 }
 
+/* //////// -----------      CAROUSEL     ---------- */
+
+#partie-burger .container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 50px;
+}
+
+#partie-burger p {
+    font-size: 1.8rem;
+}
+
+.wrapper-carousel {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.carousel {
+    width: 670px; 
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    cursor: pointer;
+    overflow: hidden;
+    white-space: nowrap;
+    scroll-behavior: smooth;
+}
+
+.wrapper-carousel .container-img {
+    width: 210px;
+    height: 210px;
+    max-width: 210px;
+    max-height: 210px;
+    object-fit: cover;
+    user-select: none;
+}
+
+.wrapper-carousel img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.wrapper-carousel h3 {
+    font-size: 1.5rem;
+    font-weight: 300;
+    text-align: center;
+    margin-top :10px;
+}
+
+.carousel.dragging{
+    cursor: grab;
+    scroll-behavior: auto;
+  }
+
+.carousel.dragging .container-img {
+    pointer-events: none;
+}
+
 /* //////// -----------     ACTUALITÉ     ---------- */
+
+#partie-actu header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px 0;
+}
+
+#partie-actu h2 {
+    text-align: center;
+}
+
+#partie-actu header div {
+    border-top: 4px dashed var(--color-bleu);
+    width: 42%;
+    height: 0px;
+}
 
 .container-grid {
     display: grid;
     gap: 60px;
     grid-template-columns: 1fr 1fr 1fr;
+    margin-top: 20px;
 }
 
 .container-grid .child-grid {
@@ -224,6 +334,8 @@ nav .menu-button {
 
 .container-grid p {
     font-size: 1rem;
+    margin: 10px 8px;
+    text-align: center;
 }
 
 .container-grid .child-grid button {
@@ -307,10 +419,6 @@ nav .menu-button {
     text-align: center;
 }
 
-#page-clickcollect h1 {
-    font-size: 5rem;
-}
-
 #page-clickcollect h2 {
     font-family: 'Roboto', 'sans-serif';
     font-size: 3rem;
@@ -349,6 +457,8 @@ nav .menu-button {
     flex-direction: row;
     align-items:center;
     justify-content: space-between;
+    padding: 40px 0;
+    border-top: 5px dashed var(--color-bleu);
 }
 
 #form-clickcollect .produit .container-img {
@@ -357,14 +467,33 @@ nav .menu-button {
     min-height: 200px;
     height: 200px;
     overflow: hidden;
+    border-radius: 14px;
+
+    -webkit-box-shadow: 0px 28px 0px -10px var(--color-bleu-clair), 0px -28px 0px -10px var(--color-bleu-clair); 
+    box-shadow: 0px 28px 0px -10px var(--color-bleu-clair), 0px -28px 0px -10px var(--color-bleu-clair) ;
 }
 
 #form-clickcollect .produit img {
+    height: 100%;
     width: 100%;
+    object-fit: cover;
 }
 
 #form-clickcollect .produit p, #form-clickcollect .produit h2 {
     width: 30%;
+}
+
+#form-clickcollect .produit .prix {
+    width: 80px;
+    height: 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+    background-color: var(--color-bleu);
+    color: white;
+    font-size: 1.4rem;
 }
 
 /* //////////////////////////////////////////////////     FOOTER      ////////////////////// */
@@ -386,6 +515,10 @@ footer .container {
 footer ul {
     list-style-type: none;    
     margin: 0;
+}
+
+footer li {
+    margin-bottom: 15px;
 }
 
 footer a {
