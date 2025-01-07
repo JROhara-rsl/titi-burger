@@ -15,6 +15,7 @@ fetch('../json/menu.json')
             </div>
             <h2 class="border-bottom pb-2">${burger.nom}</h2>
             <p>${burger.description}</p>
+            <div class="prix">${burger.price}€</div>
         `;
 
         container.appendChild(menuDiv);
