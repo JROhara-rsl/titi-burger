@@ -2,8 +2,10 @@
 const buttonStart = document.getElementById("button-start");
 const containerIntro = document.getElementById("partie-clickcollect");
 const containerMenu = document.getElementById("partie-menu");
+const containerForm = document.getElementsByClassName("form-menu");
 const containerNav = document.getElementById("form-navigation");
 const containerBurger = document.getElementById("form-burger");
+
 
 
 // 2 - Préparer des bouttons next et before
@@ -54,6 +56,10 @@ buttonStart.addEventListener('click', function(event) {
 
 
 function fonctionNext(identifiant){
+    let nomContainer = "form-"+identifiant;
+    let container = document.getElementById(nomContainer);
+
+
 
     fetch('../json/menu.json')
     .then(response => response.json())
@@ -62,7 +68,7 @@ function fonctionNext(identifiant){
         const nomCategorie = nomCategories[identifiant];
         console.log(nomCategorie);
 
-        menus[0].categorie[0].nomCategorie[0].articles.forEach(produit => {
+        nomCategorie[0].articles.forEach(produit => {
             
             let menuDiv = document.createElement("div");
             menuDiv.className = "produit";
@@ -77,8 +83,12 @@ function fonctionNext(identifiant){
                 <div class="prix">${produit.price}€</div>
             `;
 
-            containerBurger.appendChild(menuDiv);
+            container.appendChild(menuDiv);
         });
     })
     .catch(error => console.log("Erreur lors du chargement du fichier JSON :", error));
+
+    setTimeout(() => {
+        container.setAttribute("style", "height: 1140px;");
+    }, 10);
 }
