@@ -2,157 +2,152 @@
     {
         "categorie": [ 
         {
-            "burger": [
-            {
-                "nom": "Burger",
-                "articles": [
-                    {  
-                        "nom": "Le Dark Burger",
-                        "id": "dark-burger",
-                        "price": "13",
-                        "image": "./assets/images/hamburger-noir.jpg",
-                        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Enim mi at ultrices praesent posuere sit. Pulvinar.",
-                        "__v": 0
-                    },
-                    {  
-                        "nom": "L'Original Titi",
-                        "id": "original-tit",
-                        "price": "12",
-                        "image": "./assets/images/hamburger-cheese.jpg",
-                        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Enim mi at ultrices praesent posuere sit. Pulvinar.",
-                        "__v": 0
-                    },
-                    {  
-                        "nom": "Veggie Burger",
-                        "id": "veggie-burger",
-                        "price": "11.5",
-                        "image": "./assets/images/hamburger-vegetal.jpg",
-                        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Enim mi at ultrices praesent posuere sit. Pulvinar."
-                    },
-                    {  
-                        "nom": "Le Big Big",
-                        "id": "big-burger",
-                        "price": "14",
-                        "image": "./assets/images/hamburger-double.jpg",
-                        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Enim mi at ultrices praesent posuere sit. Pulvinar.",
-                        "__v": 0
-                    }
-                ]
-            }],
-            "boisson": [
-            {
-                "nom": "Boisson",
-                "articles": [
-                    {  
-                        "nom": "Jus de Citron",
-                        "id": "jus-citron",
-                        "price": "3",
-                        "image": "./assets/images/limonade.jpg",
-                        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Enim mi at ultrices praesent posuere sit. Pulvinar.",
-                        "__v": 0
-                    },
-                    {  
-                        "nom": "Coca Cola",
-                        "id": "coca-cola",
-                        "price": "2.5",
-                        "image": "./assets/images/coca-cola.jpg",
-                        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Enim mi at ultrices praesent posuere sit. Pulvinar.",
-                        "__v": 0
-                    },
-                    {  
-                        "nom": "Limonade-menthe",
-                        "id": "limonade-menthe",
-                        "price": "3",
-                        "image": "./assets/images/limonade-menthe.jpg",
-                        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Enim mi at ultrices praesent posuere sit. Pulvinar.",
-                        "__v": 0
-                    },
-                    {  
-                        "nom": "Jus de Pomme",
-                        "id": "jus-pomme",
-                        "price": "3",
-                        "image": "./assets/images/jus-de-pomme.jpeg",
-                        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Enim mi at ultrices praesent posuere sit. Pulvinar.",
-                        "__v": 0
-                    }
-                ]
-            }],
-            "accompagnement": [
-            {
-                "nom": "accompagnement",
-                "articles": [
-                    {  
-                        "nom": "Frites",
-                        "id": "frites",
-                        "price": "3.5",
-                        "image": "./assets/images/frites.jpg",
-                        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Enim mi at ultrices praesent posuere sit. Pulvinar.",
-                        "__v": 0
-                    },
-                    {  
-                        "nom": "Frites de patates douces",
-                        "id": "frites-patates-douces",
-                        "price": "4.5",
-                        "image": "./assets/images/frites-patate-douce.jpg",
-                        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Enim mi at ultrices praesent posuere sit. Pulvinar.",
-                        "__v": 0
-                    },
-                    {  
-                        "nom": "Salade",
-                        "id": "salade",
-                        "price": "4.5",
-                        "image": "./assets/images/salade.jpg",
-                        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Enim mi at ultrices praesent posuere sit. Pulvinar.",
-                        "__v": 0
-                    },
-                    {  
-                        "nom": "Maïs frit",
-                        "id": "mais-frit",
-                        "price": "5",
-                        "image": "./assets/images/mais.jpg",
-                        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Enim mi at ultrices praesent posuere sit. Pulvinar.",
-                        "__v": 0
-                    }
-                ]
-            }],
-            "dessert": [    
-            {
-                "nom": "Dessert",
-                "articles": [
-                    {  
-                        "nom": "Muffins",
-                        "id": "muffins",
-                        "price": "3.5",
-                        "image": "./assets/images/muffin.jpg",
-                        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Enim mi at ultrices praesent posuere sit. Pulvinar.",
-                        "__v": 0
-                    },
-                    {  
-                        "nom": "Tiramisu",
-                        "id": "tiramisu",
-                        "price": "5",
-                        "image": "./assets/images/tiramisu.jpg",
-                        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Enim mi at ultrices praesent posuere sit. Pulvinar.",
-                        "__v": 0
-                    },
-                    {  
-                        "nom": "Gauffres",
-                        "id": "gauffres",
-                        "price": "3",
-                        "image": "./assets/images/gauffres.jpg",
-                        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Enim mi at ultrices praesent posuere sit. Pulvinar.",
-                        "__v": 0
-                    },
-                    {  
-                        "nom": "Pancakes",
-                        "id": "pancakes",
-                        "price": "3",
-                        "image": "./assets/images/pancakes.jpg",
-                        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Enim mi at ultrices praesent posuere sit. Pulvinar.",
-                        "__v": 0
-                    }
-                ]
-            }]
-        }]
+            "nom": "Burger",
+            "articles": [
+                {  
+                    "nom": "Le Dark Burger",
+                    "id": "dark-burger",
+                    "price": "13",
+                    "image": "./assets/images/hamburger-noir.jpg",
+                    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Enim mi at ultrices praesent posuere sit. Pulvinar.",
+                    "__v": 0
+                },
+                {  
+                    "nom": "L'Original Titi",
+                    "id": "original-tit",
+                    "price": "12",
+                    "image": "./assets/images/hamburger-cheese.jpg",
+                    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Enim mi at ultrices praesent posuere sit. Pulvinar.",
+                    "__v": 0
+                },
+                {  
+                    "nom": "Veggie Burger",
+                    "id": "veggie-burger",
+                    "price": "11.5",
+                    "image": "./assets/images/hamburger-vegetal.jpg",
+                    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Enim mi at ultrices praesent posuere sit. Pulvinar."
+                },
+                {  
+                    "nom": "Le Big Big",
+                    "id": "big-burger",
+                    "price": "14",
+                    "image": "./assets/images/hamburger-double.jpg",
+                    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Enim mi at ultrices praesent posuere sit. Pulvinar.",
+                    "__v": 0
+                }
+            ]
+        },
+        {
+            "nom": "accompagnement",
+            "articles": [
+                {  
+                    "nom": "Frites",
+                    "id": "frites",
+                    "price": "3.5",
+                    "image": "./assets/images/frites.jpg",
+                    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Enim mi at ultrices praesent posuere sit. Pulvinar.",
+                    "__v": 0
+                },
+                {  
+                    "nom": "Frites de patates douces",
+                    "id": "frites-patates-douces",
+                    "price": "4.5",
+                    "image": "./assets/images/frites-patate-douce.jpg",
+                    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Enim mi at ultrices praesent posuere sit. Pulvinar.",
+                    "__v": 0
+                },
+                {  
+                    "nom": "Salade",
+                    "id": "salade",
+                    "price": "4.5",
+                    "image": "./assets/images/salade.jpg",
+                    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Enim mi at ultrices praesent posuere sit. Pulvinar.",
+                    "__v": 0
+                },
+                {  
+                    "nom": "Maïs frit",
+                    "id": "mais-frit",
+                    "price": "5",
+                    "image": "./assets/images/mais.jpg",
+                    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Enim mi at ultrices praesent posuere sit. Pulvinar.",
+                    "__v": 0
+                }
+            ]
+        },
+        {
+            "nom": "Boisson",
+            "articles": [
+                {  
+                    "nom": "Jus de Citron",
+                    "id": "jus-citron",
+                    "price": "3",
+                    "image": "./assets/images/limonade.jpg",
+                    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Enim mi at ultrices praesent posuere sit. Pulvinar.",
+                    "__v": 0
+                },
+                {  
+                    "nom": "Coca Cola",
+                    "id": "coca-cola",
+                    "price": "2.5",
+                    "image": "./assets/images/coca-cola.jpg",
+                    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Enim mi at ultrices praesent posuere sit. Pulvinar.",
+                    "__v": 0
+                },
+                {  
+                    "nom": "Limonade-menthe",
+                    "id": "limonade-menthe",
+                    "price": "3",
+                    "image": "./assets/images/limonade-menthe.jpg",
+                    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Enim mi at ultrices praesent posuere sit. Pulvinar.",
+                    "__v": 0
+                },
+                {  
+                    "nom": "Jus de Pomme",
+                    "id": "jus-pomme",
+                    "price": "3",
+                    "image": "./assets/images/jus-de-pomme.jpeg",
+                    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Enim mi at ultrices praesent posuere sit. Pulvinar.",
+                    "__v": 0
+                }
+            ]
+        },
+        {
+            "nom": "Dessert",
+            "articles": [
+                {  
+                    "nom": "Muffins",
+                    "id": "muffins",
+                    "price": "3.5",
+                    "image": "./assets/images/muffin.jpg",
+                    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Enim mi at ultrices praesent posuere sit. Pulvinar.",
+                    "__v": 0
+                },
+                {  
+                    "nom": "Tiramisu",
+                    "id": "tiramisu",
+                    "price": "5",
+                    "image": "./assets/images/tiramisu.jpg",
+                    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Enim mi at ultrices praesent posuere sit. Pulvinar.",
+                    "__v": 0
+                },
+                {  
+                    "nom": "Gauffres",
+                    "id": "gauffres",
+                    "price": "3",
+                    "image": "./assets/images/gauffres.jpg",
+                    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Enim mi at ultrices praesent posuere sit. Pulvinar.",
+                    "__v": 0
+                },
+                {  
+                    "nom": "Pancakes",
+                    "id": "pancakes",
+                    "price": "3",
+                    "image": "./assets/images/pancakes.jpg",
+                    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Enim mi at ultrices praesent posuere sit. Pulvinar.",
+                    "__v": 0
+                }
+            ]
+        }
+        ]
     }
 ]

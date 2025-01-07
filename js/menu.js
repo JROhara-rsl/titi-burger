@@ -4,9 +4,9 @@ const containerIntro = document.getElementById("partie-clickcollect");
 const containerMenu = document.getElementById("partie-menu");
 const containerForm = document.getElementsByClassName("form-menu");
 const containerNav = document.getElementById("form-navigation");
-const containerBurger = document.getElementById("form-burger");
+const containerBurger = document.getElementById("form-0");
 
-
+let compteur = 0;
 
 // 2 - Préparer des bouttons next et before
 let buttonNext = document.createElement("button");
@@ -25,7 +25,7 @@ buttonStart.addEventListener('click', function(event) {
     fetch('../json/menu.json')
     .then(response => response.json())
     .then(menus => { 
-        menus[0].categorie[0].burger[0].articles.forEach(burger => {
+        menus[0].categorie[0].articles.forEach(burger => {
 
             let menuDiv = document.createElement("div");
             menuDiv.className = "produit";
@@ -46,29 +46,30 @@ buttonStart.addEventListener('click', function(event) {
     .catch(error => console.log("Erreur lors du chargement du fichier JSON :", error));
 
     containerNav.appendChild(buttonNext);
-    buttonNext.setAttribute("onclick", "fonctionNext('accompagnement')");
+    buttonNext.setAttribute("onclick", "fonctionNext('1')");
     setTimeout(() => {
         containerBurger.setAttribute("style", "height: 1140px;");
     }, 10);
 });
 
 // 4 - Fonction pour les boutons suivant
-
-
 function fonctionNext(identifiant){
+    identifiant = parseInt(identifiant)+compteur;
+    console.log(identifiant);
     let nomContainer = "form-"+identifiant;
     let container = document.getElementById(nomContainer);
 
-
+    let nomContainerCache = "form-"+(identifiant-1);
+    let containerCache = document.getElementById(nomContainerCache); 
+    containerCache.setAttribute("style", "height: 0;");
 
     fetch('../json/menu.json')
     .then(response => response.json())
     .then(menus => { 
-        const nomCategories = menus[0].categorie[0];
-        const nomCategorie = nomCategories[identifiant];
-        console.log(nomCategorie);
+        const nomCategories = menus[0].categorie[identifiant];
+        console.log(nomCategories);
 
-        nomCategorie[0].articles.forEach(produit => {
+        nomCategories.articles.forEach(produit => {
             
             let menuDiv = document.createElement("div");
             menuDiv.className = "produit";
@@ -91,4 +92,6 @@ function fonctionNext(identifiant){
     setTimeout(() => {
         container.setAttribute("style", "height: 1140px;");
     }, 10);
+
+    compteur++;
 }
