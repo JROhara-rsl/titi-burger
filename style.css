@@ -490,21 +490,61 @@ nav .menu-button, .contenu-banner a {
 }
 
 #form-clickcollect .form-menu {
-    transition: height 0.4s ease-in;
-    height: 0;
     overflow: hidden;
+    height: 0;
+    transition: height 0.4s ease-in;
 }
 
-#form-clickcollect .produit {
+#form-clickcollect .form-menu.active {
+    height: 1320px;
+}
+
+#form-clickcollect .form-menu .container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 40px;
+    opacity: 0;
+}
+
+#form-clickcollect .form-menu.active .container {
+    opacity: 1;
+}
+
+#form-clickcollect .form-menu .container div:first-child {
+    width: 50%;
+}
+
+#form-clickcollect .form-menu .container div:nth-child(2) {
+    text-align: right;
+}
+
+#form-clickcollect .form-menu .container h3 {
+    font-family: 'homeday', sans-serif;
+    font-size: 2.4rem;
+    color: var(--color-base);
+}
+
+
+#form-clickcollect .form-menu .produit {
     display: flex;
     flex-direction: row;
     align-items:center;
     justify-content: space-between;
     padding: 40px 0;
     border-top: 5px dashed var(--color-bleu);
+    transform: translateX(-1200px);
+    opacity: 0;
+    transition: transform 0.3s ease-in, opacity 0.1s ease-in;
 }
 
-#form-clickcollect .produit .container-img {
+#form-clickcollect .form-menu.active .produit {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+#form-clickcollect .form-menu .produit .container-img {
     min-width: 200px;
     width: 200px;
     min-height: 200px;
@@ -516,10 +556,22 @@ nav .menu-button, .contenu-banner a {
     box-shadow: 0px 28px 0px -10px var(--color-bleu-clair), 0px -28px 0px -10px var(--color-bleu-clair) ;
 }
 
+
 #form-clickcollect .produit img {
     height: 100%;
     width: 100%;
     object-fit: cover;
+}
+
+#form-clickcollect .produit input[type="radio"] {
+    width: 35px;
+    height: 35px;
+    border: 6px solid var(--color-bleu);
+}
+
+#form-clickcollect .produit input[type="radio"]:checked {
+    border: 6px solid var(--color-bleu);
+    background-color: var(--color-bleu);
 }
 
 #form-clickcollect .produit p, #form-clickcollect .produit h2 {
@@ -529,19 +581,18 @@ nav .menu-button, .contenu-banner a {
 
 #form-clickcollect .produit .prix {
     width: 80px;
-    height: 80px;
+    height: 45px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    border-radius: 20px;
-    background-color: var(--color-bleu);
-    color: white;
+    border-radius: 10px;
+    background-color: var(--color-gris-clair);
+    color: var(--color-sombre);
     font-size: 1.4rem;
 }
 
 #partie-menu {
-    display: none;
 }
 
 #partie-menu.active {
