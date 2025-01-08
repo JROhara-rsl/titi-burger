@@ -1,0 +1,84 @@
+/* ///////////////////////////////////////////////////////////////////////////////////////////////// */
+/* //////////////////////////////////////////////////     MEDIA QUERIES      ////////////////////// */
+
+@media (orientation: portrait) {
+
+}
+
+
+/* /////////////////////////////////////////////// 1260px //////////////// */
+
+@media only screen and (max-width: 1260px) {
+    section {
+        margin: 40px 20px;
+    }
+
+    .container-grid {    gap: 20px;     }
+    .container-grid .child-grid h3 {    font-size: 1.2rem;    }
+
+    #partie-burger .container   {   flex-direction: column;   }
+
+    #page-clickcollect h2   {       font-size: 2rem;    } 
+    #page-clickcollect p    {       font-size: 1.3rem;  }
+}
+
+
+/* /////////////////////////////////////////////// 960px //////////////// */
+
+@media only screen and (max-width: 960px) {
+    html {    font-size: 14px;  }
+
+    .contenu-banner h1 {
+        font-size: 4rem;
+    }
+
+    section h2, section h3, section p, section a {    text-align: center;     }
+
+    #partie-resto .container {
+        flex-direction: column-reverse;
+    }
+
+    #partie-resto img {
+        max-width: 90%;
+        margin: 0 5%;
+    }
+
+    #partie-bloc .container form {
+        flex-direction: column-reverse;
+    }
+    #partie-bloc label {
+        width: 100%;
+        font-size: 1.6rem;
+        text-align: center;
+        margin-bottom: 15px;
+    }
+
+    #page-clickcollect p    {       display: none;  }
+
+    footer div {    padding: 0 20px;    }
+    footer .container {      flex-wrap: wrap;     }
+    #partie-social-media {   flex-direction: row; margin: 20px 0;    }
+    #partie-social-media i { margin: 14px;   }
+
+    #partie-bloc {   padding: 0;   }
+    #partie-bloc .container .container-bloc {   margin: 0; border-radius: 0;  }
+}
+
+
+/* /////////////////////////////////////////////// 780px //////////////// */
+
+@media only screen and (max-width: 780px) {
+    html {    font-size: 12px;  }
+
+    nav #menu ul:nth-child(2) {     display: none;  }
+
+    .container-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .container-grid .child-grid:nth-child(3) {
+        display: none;
+    }
+
+    .carousel {     width: 442px;   }
+}

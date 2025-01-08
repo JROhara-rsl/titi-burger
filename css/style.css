@@ -16,9 +16,9 @@
 
 @font-face {
     font-family: 'homeday';
-    src: url('assets/fonts/homeday/homeday-webfont.woff2') format('woff2'),
-         url('assets/fonts/homeday/homeday-webfont.woff') format('woff'),
-         url('assets/fonts/homeday/homeday.ttf') format('ttf');
+    src: url('../assets/fonts/homeday/homeday-webfont.woff2') format('woff2'),
+         url('../assets/fonts/homeday/homeday-webfont.woff') format('woff'),
+         url('../assets/fonts/homeday/homeday.ttf') format('ttf');
     font-weight: normal;
     font-style: normal;
 }
@@ -182,7 +182,7 @@ nav .menu-button, .contenu-banner a {
 
 #page-home .container-banner {   
     padding-top: 56.25%; 
-    background: url('assets/images/banniere.png'); 
+    background: url('../assets/images/banniere.png'); 
     background-size: cover;   
 }
 
@@ -200,7 +200,7 @@ nav .menu-button, .contenu-banner a {
     justify-content: center;
     align-items: center;
     
-    padding: 60px;
+    padding: 60px 0;
 }
 
 .contenu-banner h1 {
@@ -222,6 +222,18 @@ nav .menu-button, .contenu-banner a {
 
 #partie-resto img {
     max-width: 446px;
+}
+
+#partie-resto a {
+    display: block;
+    margin-top: 30px;
+    font-size: 1.3rem;
+    text-decoration: none;
+    color: var(--color-bleu-sombre);
+}
+
+#partie-resto a:hover {
+    color: var(--color-base);
 }
 
 /* //////// -----------      CAROUSEL     ---------- */
@@ -322,6 +334,7 @@ nav .menu-button, .contenu-banner a {
 }
 
 .container-grid .child-grid img {
+    width: 100%;
     max-width: 378px;
 }
 
@@ -378,7 +391,9 @@ nav .menu-button, .contenu-banner a {
 }
 
 #partie-bloc .container form .newsletter-input input {
-    width: 415px;
+    max-width: 415px;
+    min-width: 300px;
+    width: 100%;
     height: 70px;
     border-radius: 4px;
     border: none;
@@ -440,7 +455,7 @@ nav .menu-button, .contenu-banner a {
 
 #page-clickcollect h2 {
     font-family: 'Roboto', 'sans-serif';
-    font-size: 3rem;
+    font-size: 2.5rem;
     font-weight: 400;
     color: var(--color-sombre)
 }
@@ -460,7 +475,8 @@ nav .menu-button, .contenu-banner a {
 }
 
 .button-menu {
-    width: 456px;
+    width: 100%;
+    max-width: 456px;
     height: 90px;
     margin: 0 auto;
     background-color: var(--color-base);
@@ -492,6 +508,7 @@ nav .menu-button, .contenu-banner a {
 #form-clickcollect .form-menu {
     overflow: hidden;
     height: 0;
+    width: 100%;
     transition: height 0.4s ease-in;
 }
 
@@ -618,6 +635,7 @@ footer .container {
 footer ul {
     list-style-type: none;    
     margin: 0;
+    padding: 0;
 }
 
 footer li {
