@@ -21,6 +21,10 @@ let baliseBurger;
 let burgerSelect;
 let baliseAccompagnement;
 let accompagnementSelect;
+let baliseBoisson;
+let boissonSelect;
+let baliseDessert;
+let dessertSelect;
 
 function baliseBurgerSelect() {
     baliseBurger = document.querySelectorAll('input[name="burger"]');
@@ -30,7 +34,6 @@ function baliseBurgerSelect() {
             break
         }
     }
-    console.log(burgerSelect) 
 }
 
 function baliseAccompagnementSelect() {
@@ -41,7 +44,26 @@ function baliseAccompagnementSelect() {
             break
         }
     }
-    console.log(accompagnementSelect) 
+}
+
+function baliseBoissonSelect() {
+    baliseBoisson = document.querySelectorAll('input[name="boisson"]');
+    for (let i = 0; i < baliseBoisson.length; i++) {
+        if (baliseBoisson[i].checked) {
+            boissonSelect = baliseBoisson[i].value
+            break
+        }
+    }
+}
+
+function baliseDessertSelect() {
+    baliseDessert = document.querySelectorAll('input[name="dessert"]');
+    for (let i = 0; i < baliseDessert.length; i++) {
+        if (baliseDessert[i].checked) {
+            dessertSelect = baliseDessert[i].value
+            break
+        }
+    }
 }
 
 // 3 - Fonction pour les boutons suivant
@@ -91,6 +113,28 @@ function fonctionNext(identifiant){
         } else if (accompagnementSelect === 'mais-frit') {
             containerSelectAccompagnement.setAttribute("style","background-image: url('../assets/images/mais.jpg')");
         }
+    } else if (identifiant == 3) {
+        baliseBoissonSelect()
+        if (boissonSelect === 'jus-citron') {
+            containerSelectBoisson.setAttribute("style","background-image: url('../assets/images/limonade.jpg')");
+        } else if (boissonSelect === 'coca-cola') {
+            containerSelectBoisson.setAttribute("style","background-image: url('../assets/images/coca-cola.jpg')");
+        } else if (boissonSelect === 'limonade-menthe') {
+            containerSelectBoisson.setAttribute("style","background-image: url('../assets/images/limonade-menthe.jpg')");
+        } else if (boissonSelect === 'jus-pomme') {
+            containerSelectBoisson.setAttribute("style","background-image: url('../assets/images/jus-de-pomme.jpg')");
+        }
+    } else if (identifiant == 4) {
+        baliseDessertSelect()
+        if (dessertSelect === 'muffins') {
+            containerSelectDessert.setAttribute("style","background-image: url('../assets/images/muffin.jpg')");
+        } else if (dessertSelect === 'tiramisu') {
+            containerSelectDessert.setAttribute("style","background-image: url('../assets/images/tiramisu.jpg')");
+        } else if (dessertSelect === 'gaufres') {
+            containerSelectDessert.setAttribute("style","background-image: url('../assets/images/gauffres.jpg')");
+        } else if (dessertSelect === 'pancakes') {
+            containerSelectDessert.setAttribute("style","background-image: url('../assets/images/pancakes.jpg')");
+        }
     }
 
     // Importer les articles de la bonne catégorie via la librairie JSON 
@@ -102,9 +146,9 @@ function fonctionNext(identifiant){
         let nomCategorie = menus[0].categorie[identifiant].nom;
 
         numCategorie.articles.forEach(produit => {   
-            let menuDiv = document.createElement("div");
+            let menuDiv = document.createElement("label");
             menuDiv.className = "produit";
-
+            menuDiv.setAttribute("for", `${nomCategorie}-${produit.id}`)
             menuDiv.innerHTML = `
                 <input type="radio" id="${nomCategorie}-${produit.id}" name="${nomCategorie}" value="${produit.id}" />
                 <div class="container-img">

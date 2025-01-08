@@ -547,7 +547,7 @@ nav .menu-button, .contenu-banner a {
 }
 
 #form-clickcollect .form-menu.active {
-    height: 1100px;
+    height: 1120px;
 }
 
 #form-clickcollect .container {
@@ -571,7 +571,6 @@ nav .menu-button, .contenu-banner a {
     font-size: 2.4rem;
     color: var(--color-base);
 }
-
 
 #form-clickcollect .form-menu .produit {
     display: flex;
