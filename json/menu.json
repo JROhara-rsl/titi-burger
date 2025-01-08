@@ -2,7 +2,7 @@
     {
         "categorie": [ 
         {
-            "nom": "Burger",
+            "nom": "burger",
             "articles": [
                 {  
                     "nom": "Le Dark Burger",
@@ -14,7 +14,7 @@
                 },
                 {  
                     "nom": "L'Original Titi",
-                    "id": "original-tit",
+                    "id": "original-titi",
                     "price": "12",
                     "image": "./assets/images/hamburger-cheese.jpg",
                     "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Enim mi at ultrices praesent posuere sit. Pulvinar.",
@@ -29,7 +29,7 @@
                 },
                 {  
                     "nom": "Le Big Big",
-                    "id": "big-burger",
+                    "id": "big-big",
                     "price": "14",
                     "image": "./assets/images/hamburger-double.jpg",
                     "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Enim mi at ultrices praesent posuere sit. Pulvinar.",
@@ -75,7 +75,7 @@
             ]
         },
         {
-            "nom": "Boisson",
+            "nom": "boisson",
             "articles": [
                 {  
                     "nom": "Jus de Citron",
@@ -108,11 +108,19 @@
                     "image": "./assets/images/jus-de-pomme.jpeg",
                     "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Enim mi at ultrices praesent posuere sit. Pulvinar.",
                     "__v": 0
+                },
+                {  
+                    "nom": "Eau",
+                    "id": "eau",
+                    "price": "2",
+                    "image": "./assets/images/cristalline.jpeg",
+                    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Enim mi at ultrices praesent posuere sit. Pulvinar.",
+                    "__v": 0
                 }
             ]
         },
         {
-            "nom": "Dessert",
+            "nom": "dessert",
             "articles": [
                 {  
                     "nom": "Muffins",

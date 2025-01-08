@@ -464,6 +464,34 @@ nav .menu-button, .contenu-banner a {
     font-size: 1.6rem;
 }
 
+
+/* --------------------------------- SELECTION ------------ */
+
+#page-clickcollect .container-selection  {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+#page-clickcollect .container-selection .child-item {
+    width: 90px;
+    height: 90px;
+    border-radius: 14px;
+    padding: 14px;
+    background-color: var(--color-bleu-clair);
+}
+
+#page-clickcollect .container-selection .child-item .container-img {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    background-color: var(--color-gris-clair);
+    background-size: cover;
+    background-position: center;
+    -webkit-box-shadow: 0px 6px 10px -5px #000000; 
+    box-shadow: 0px 6px 10px -5px #000000;
+}
+
 #page-clickcollect .form-commencer {
     align-items: center !important;
     justify-content: center !important;
@@ -498,6 +526,12 @@ nav .menu-button, .contenu-banner a {
     background-color: var(--color-bleu-sombre);
 }
 
+#section-nav {      margin: 0;     }
+
+
+
+/* --------------------------------- FORMULAIRE ------------ */
+
 #form-clickcollect {
     display: flex;
     flex-direction: column;
@@ -513,31 +547,26 @@ nav .menu-button, .contenu-banner a {
 }
 
 #form-clickcollect .form-menu.active {
-    height: 1320px;
+    height: 1100px;
 }
 
-#form-clickcollect .form-menu .container {
-    display: flex;
+#form-clickcollect .container {
+    display: none;
     flex-direction: row;
     justify-content: space-between;
     width: 100%;
     margin-bottom: 40px;
-    opacity: 0;
 }
 
-#form-clickcollect .form-menu.active .container {
-    opacity: 1;
-}
-
-#form-clickcollect .form-menu .container div:first-child {
+#form-clickcollect .container>div:first-child {
     width: 50%;
 }
 
-#form-clickcollect .form-menu .container div:nth-child(2) {
+#form-clickcollect .container div:nth-child(2) {
     text-align: right;
 }
 
-#form-clickcollect .form-menu .container h3 {
+#form-clickcollect .container h3 {
     font-family: 'homeday', sans-serif;
     font-size: 2.4rem;
     color: var(--color-base);
@@ -573,7 +602,6 @@ nav .menu-button, .contenu-banner a {
     box-shadow: 0px 28px 0px -10px var(--color-bleu-clair), 0px -28px 0px -10px var(--color-bleu-clair) ;
 }
 
-
 #form-clickcollect .produit img {
     height: 100%;
     width: 100%;
@@ -607,9 +635,6 @@ nav .menu-button, .contenu-banner a {
     background-color: var(--color-gris-clair);
     color: var(--color-sombre);
     font-size: 1.4rem;
-}
-
-#partie-menu {
 }
 
 #partie-menu.active {
