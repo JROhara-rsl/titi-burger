@@ -547,7 +547,7 @@ nav .menu-button, .contenu-banner a {
 }
 
 #form-clickcollect .form-menu.active {
-    height: 1120px;
+    height: 1250px;
 }
 
 #form-clickcollect .container {
@@ -577,7 +577,6 @@ nav .menu-button, .contenu-banner a {
     flex-direction: row;
     align-items:center;
     justify-content: space-between;
-    padding: 40px 0;
     border-top: 5px dashed var(--color-bleu);
     transform: translateX(-1200px);
     opacity: 0;
@@ -587,6 +586,14 @@ nav .menu-button, .contenu-banner a {
 #form-clickcollect .form-menu.active .produit {
     opacity: 1;
     transform: translateX(0);
+}
+
+#form-clickcollect .form-menu.active .produit label {
+    display: flex;
+    flex-direction: row;
+    align-items:center;
+    justify-content: space-between;
+    padding: 40px 10px;
 }
 
 #form-clickcollect .form-menu .produit .container-img {
@@ -636,8 +643,18 @@ nav .menu-button, .contenu-banner a {
     font-size: 1.4rem;
 }
 
-#partie-menu.active {
-    display: block;
+/* --------------------------------- NAVIGATION FORMULAIRE ------------ */
+
+#partie-navigation .container-button {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+#form-information {
+    text-align: center;
+    color:darkorange;
+    display: none;
 }
 
 /* //////////////////////////////////////////////////     FOOTER      ////////////////////// */
@@ -669,4 +686,13 @@ footer li {
 footer a {
     color: white;
     text-decoration: none;
+}
+
+
+.active {
+    display: block !important;
+}
+
+.desactive {
+    display: none !important;
 }
