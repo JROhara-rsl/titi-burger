@@ -68,7 +68,7 @@ function fonctionNext(identifiant){
                 menuDiv.className = "produit";
                 menuDiv.innerHTML = `
                     <input type="radio" id="${nomCategorie}-${produit.id}" name="${nomCategorie}" value="${produit.id}" />
-                    <label for="${nomCategorie}-${produit.id}">
+                    <label id="label-${nomCategorie}-${produit.id}" for="${nomCategorie}-${produit.id}">
                         <div class="container-img">
                             <img src=".${produit.image}" class="card-img-top" alt="illustration ${produit.nom}">
                         </div>
