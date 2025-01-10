@@ -4,23 +4,56 @@
 var maCommande = {
     burger: {
         nom: "",
-        image: ""
+        image: "", 
+        prix: ""
     },
     accompagnement: {
         nom: "",
-        image: ""
+        image: "",
+        prix: ""
     },
     boisson: {
         nom: "",
-        image: ""
+        image: "",
+        prix: ""
     },
     dessert:{
         nom: "",
-        image: ""
+        image: "",
+        prix: ""
     }
   };
 
+// SELECTIONNER LES ELEMENTS DE LA FACTURE FINALE
+
+
+
+// Mettre à jour les container de la commande sélectionnée
+// ************************************************************
+
+function majContainerSelection() {
+    console.log(maCommande);
+    
+    imageSelectBurger.setAttribute("style","background-image: url('" + maCommande.burger.image + "');");
+    imageSelectAccompagnement.setAttribute("style","background-image: url('" + maCommande.accompagnement.image + "');");
+    imageSelectBoisson.setAttribute("style","background-image: url('" + maCommande.boisson.image + "');");
+    imageSelectDessert.setAttribute("style","background-image: url('" + maCommande.dessert.image + "');");
+
+    nomSelectBurger.innerHTML = maCommande.burger.nom;
+    nomSelectAccompagnement.innerHTML = maCommande.accompagnement.nom;
+    nomSelectBoisson.innerHTML = maCommande.boisson.nom;
+    nomSelectDessert.innerHTML = maCommande.dessert.nom;
+
+    prixSelectBurger.innerHTML = maCommande.burger.prix;
+    prixSelectAccompagnement.innerHTML = maCommande.accompagnement.prix;
+    prixSelectBoisson.innerHTML = maCommande.boisson.prix;
+    prixSelectDessert.innerHTML = maCommande.dessert.prix;
+}
+  
+
 // Charger les données depuis le localStorage au démarrage
+// ************************************************************ 
+
 document.addEventListener("DOMContentLoaded", function() {
     const savedCommande = localStorage.getItem("maCommande");
     //localStorage.removeItem("maCommande");
@@ -36,20 +69,23 @@ document.addEventListener("DOMContentLoaded", function() {
             const id = event.target.id
             const label = document.getElementById("label-"+id);
             const img = label.querySelector('img');
-            console.log(label);
+            const prix = label.querySelector('.prix').innerHTML;
             
             // Mettre à jour maCommande avec la nouvelle valeur
             maCommande[name].nom = value;
             maCommande[name].image = img.src;
-
+            maCommande[name].prix = prix;
+            
             // Sauvegarder dans le localStorage
             localStorage.setItem("maCommande", JSON.stringify(maCommande));
 
             //console.log("Commande de " +  name + " mise à jour :", maCommande[name]);
             //console.log(maCommande);
-            
+            majContainerSelection();
         }
     });
+
+    majContainerSelection();
 });
 
 

@@ -120,6 +120,10 @@ nav {
     padding: 15px 0px;
 }
 
+#page-commande nav {
+    position: relative;
+}
+
 nav .container {
     max-width: 1280px;
     display: flex;
@@ -143,12 +147,12 @@ nav ul {
 	list-style-type: none;
 	display:flex;
     float: right;
-    margin: 0 25px;
+    margin: 0 0 0 25px;
     padding: 0;
 }
 
 nav li {
-    padding: 10px 20px;
+    padding: 10px 0 10px 20px;
 }
 
 nav li a {
@@ -453,7 +457,7 @@ nav .menu-button, .contenu-banner a {
     text-align: center;
 }
 
-#page-clickcollect h2 {
+#page-clickcollect h2, #partie-commande h2 {
     font-family: 'Roboto', 'sans-serif';
     font-size: 2.5rem;
     font-weight: 400;
@@ -532,63 +536,76 @@ nav .menu-button, .contenu-banner a {
 
 /* --------------------------------- FORMULAIRE ------------ */
 
-#form-clickcollect {
+.partie-produit {
     display: flex;
     flex-direction: column;
     align-items:flex-start;
     justify-content: space-between;
 }
 
+#partie-commande .form-menu {
+    overflow: hidden; 
+    width: 100%;
+}
+
 #form-clickcollect .form-menu {
-    overflow: hidden;
-    height: 0;
+    overflow: hidden; 
+    height: 1250px;
     width: 100%;
     transition: height 0.4s ease-in;
+    height: 0;
 }
 
 #form-clickcollect .form-menu.active {
     height: 1250px;
 }
 
-#form-clickcollect .container {
-    display: none;
+.partie-produit .container {
+    display: flex;
     flex-direction: row;
     justify-content: space-between;
     width: 100%;
     margin-bottom: 40px;
 }
 
-#form-clickcollect .container>div:first-child {
+#form-clickcollect .container {
+    display: none;
+}
+
+.partie-produit .container>div:first-child {
     width: 50%;
 }
 
-#form-clickcollect .container div:nth-child(2) {
+.partie-produit .container div:nth-child(2) {
     text-align: right;
 }
 
-#form-clickcollect .container h3 {
+.partie-produit .container h3 {
     font-family: 'homeday', sans-serif;
     font-size: 2.4rem;
     color: var(--color-base);
 }
 
-#form-clickcollect .form-menu .produit {
+.partie-produit .form-menu .produit {
     display: flex;
     flex-direction: row;
     align-items:center;
     justify-content: space-between;
     border-top: 5px dashed var(--color-bleu);
-    transform: translateX(-1200px);
-    opacity: 0;
-    transition: transform 0.3s ease-in, opacity 0.1s ease-in;
 }
+
+#form-clickcollect .produit {
+    opacity: 0;
+    transform: translateX(-1200px);
+    transition: transform 0.3s ease-in, opacity 0.1s ease-in;
+} 
 
 #form-clickcollect .form-menu.active .produit {
     opacity: 1;
     transform: translateX(0);
 }
 
-#form-clickcollect .form-menu.active .produit label {
+.partie-produit .form-menu.active .produit label {
     display: flex;
     flex-direction: row;
     align-items:center;
@@ -596,41 +613,43 @@ nav .menu-button, .contenu-banner a {
     padding: 40px 10px;
 }
 
-#form-clickcollect .form-menu .produit .container-img {
+.partie-produit .form-menu .produit .container-img {
     min-width: 200px;
     width: 200px;
     min-height: 200px;
     height: 200px;
     overflow: hidden;
     border-radius: 14px;
+    background-size: cover;
+    background-position: center;
 
     -webkit-box-shadow: 0px 28px 0px -10px var(--color-bleu-clair), 0px -28px 0px -10px var(--color-bleu-clair); 
     box-shadow: 0px 28px 0px -10px var(--color-bleu-clair), 0px -28px 0px -10px var(--color-bleu-clair) ;
 }
 
-#form-clickcollect .produit img {
+.partie-produit .form-menu .produit img {
     height: 100%;
     width: 100%;
     object-fit: cover;
 }
 
-#form-clickcollect .produit input[type="radio"] {
+.partie-produit .form-menu .produit input[type="radio"] {
     width: 35px;
     height: 35px;
     border: 6px solid var(--color-bleu);
 }
 
-#form-clickcollect .produit input[type="radio"]:checked {
+.partie-produit .form-menu .produit input[type="radio"]:checked {
     border: 6px solid var(--color-bleu);
     background-color: var(--color-bleu);
 }
 
-#form-clickcollect .produit p, #form-clickcollect .produit h2 {
+.partie-produit .form-menu .produit p, .partie-produit .produit h2 {
     width: 30%;
     text-align: center;
 }
 
-#form-clickcollect .produit .prix {
+.partie-produit .form-menu .produit .prix {
     width: 80px;
     height: 45px;
     display: flex;
@@ -643,6 +662,20 @@ nav .menu-button, .contenu-banner a {
     font-size: 1.4rem;
 }
 
+#partie-commande .container-selection {
+    flex-wrap: wrap;
+    max-width: 1260px;
+    margin: 0 auto;
+}
+
+#partie-commande .container-selection .produit {
+    width: 100%;
+    padding-top: 50px;
+    margin-bottom: 50px;
+}
+
+
+
 /* --------------------------------- NAVIGATION FORMULAIRE ------------ */
 
 #partie-navigation .container-button {
@@ -653,7 +686,7 @@ nav .menu-button, .contenu-banner a {
 
 #form-information {
     text-align: center;
-    color:darkorange;
+    color: var(--color-base);
     display: none;
 }
 

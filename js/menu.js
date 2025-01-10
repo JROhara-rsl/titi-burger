@@ -16,7 +16,22 @@ const containerSelectAccompagnement = document.getElementById("container-select-
 const containerSelectBoisson        = document.getElementById("container-select-boisson");
 const containerSelectDessert        = document.getElementById("container-select-dessert");
 
-// 3 - Fonction pour les boutons suivant
+const imageSelectBurger             = document.getElementById('image-select-burger');
+const imageSelectAccompagnement     = document.getElementById('image-select-accompagnement');
+const imageSelectBoisson            = document.getElementById('image-select-boisson');
+const imageSelectDessert            = document.getElementById('image-select-dessert');
+
+const nomSelectBurger               = containerSelectBurger.querySelector('h2');
+const nomSelectAccompagnement       = containerSelectAccompagnement.querySelector('h2');
+const nomSelectBoisson              = containerSelectBoisson.querySelector('h2');
+const nomSelectDessert              = containerSelectDessert.querySelector('h2');
+
+const prixSelectBurger              = containerSelectBurger.querySelector('.prix');
+const prixSelectAccompagnement      = containerSelectAccompagnement.querySelector('.prix');
+const prixSelectBoisson             = containerSelectBoisson.querySelector('.prix');
+const prixSelectDessert             = containerSelectDessert.querySelector('.prix');
+
+// 2 - Fonction pour les boutons suivant
 function fonctionNext(identifiant){
     console.log(identifiant);
     
@@ -72,9 +87,9 @@ function fonctionNext(identifiant){
                         <div class="container-img">
                             <img src=".${produit.image}" class="card-img-top" alt="illustration ${produit.nom}">
                         </div>
-                        <h2 class="border-bottom pb-2">${produit.nom}</h2>
+                        <h2>${produit.nom}</h2>
                         <p>${produit.description}</p>
-                        <div class="prix">${produit.price}€</div>
+                        <div class="prix" value="${produit.price}">${produit.price}€</div>
                     </label>
                 `;
 
@@ -95,12 +110,10 @@ function fonctionNext(identifiant){
         setTimeout(() => {
             container.appendChild(navigationDiv);
         }, 100);
-
-        majSelection();
     } else {
+
+        // Sinon, afficher la condition de sélectionner un bouton radio
         containerInfo = document.getElementById("form-information");
         containerInfo.setAttribute("class", "active");
     }
 }
-
-		
