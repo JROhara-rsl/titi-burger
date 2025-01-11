@@ -31,23 +31,23 @@ var maCommande = {
 // Mettre à jour les container de la commande sélectionnée
 // ************************************************************
 
-function majContainerSelection() {
-    console.log(maCommande);
-    
+function majContainerSelection() {    
     imageSelectBurger.setAttribute("style","background-image: url('" + maCommande.burger.image + "');");
     imageSelectAccompagnement.setAttribute("style","background-image: url('" + maCommande.accompagnement.image + "');");
     imageSelectBoisson.setAttribute("style","background-image: url('" + maCommande.boisson.image + "');");
     imageSelectDessert.setAttribute("style","background-image: url('" + maCommande.dessert.image + "');");
 
-    nomSelectBurger.innerHTML = maCommande.burger.nom;
-    nomSelectAccompagnement.innerHTML = maCommande.accompagnement.nom;
-    nomSelectBoisson.innerHTML = maCommande.boisson.nom;
-    nomSelectDessert.innerHTML = maCommande.dessert.nom;
+    if (document.getElementById('page-commande')) {
+        nomSelectBurger.innerHTML = maCommande.burger.nom;
+        nomSelectAccompagnement.innerHTML = maCommande.accompagnement.nom;
+        nomSelectBoisson.innerHTML = maCommande.boisson.nom;
+        nomSelectDessert.innerHTML = maCommande.dessert.nom;
 
-    prixSelectBurger.innerHTML = maCommande.burger.prix;
-    prixSelectAccompagnement.innerHTML = maCommande.accompagnement.prix;
-    prixSelectBoisson.innerHTML = maCommande.boisson.prix;
-    prixSelectDessert.innerHTML = maCommande.dessert.prix;
+        prixSelectBurger.innerHTML = maCommande.burger.prix;
+        prixSelectAccompagnement.innerHTML = maCommande.accompagnement.prix;
+        prixSelectBoisson.innerHTML = maCommande.boisson.prix;
+        prixSelectDessert.innerHTML = maCommande.dessert.prix;
+    }
 }
   
 

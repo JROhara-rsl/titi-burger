@@ -9,6 +9,7 @@ const containerForm = document.getElementsByClassName("form-menu");
 const containerStart  = document.getElementById("section-nav");
 const containerBurger = document.getElementById("form-0");
 let buttonNext = document.getElementById("button-next");
+let buttonGiveup;
 let containerInfo = document.getElementById("form-information");
 
 const containerSelectBurger         = document.getElementById("container-select-burger");
@@ -31,7 +32,20 @@ const prixSelectAccompagnement      = containerSelectAccompagnement.querySelecto
 const prixSelectBoisson             = containerSelectBoisson.querySelector('.prix');
 const prixSelectDessert             = containerSelectDessert.querySelector('.prix');
 
-// 2 - Fonction pour les boutons suivant
+// 2 - Fonction pour abandonner
+function giveUp() {
+    buttonGiveup = document.getElementById("button-giveup");  
+    buttonGiveup.addEventListener("click", function(event){
+        event.preventDefault();
+        localStorage.clear();
+        maCommande = [];
+        document.location.href="../html/clickcollect.html";
+        console.log(maCommande);
+    })
+}
+
+
+// 3 - Fonction pour les boutons suivant
 function fonctionNext(identifiant){
     console.log(identifiant);
     
@@ -104,14 +118,15 @@ function fonctionNext(identifiant){
             navigationDiv.innerHTML = `
                                 <div class="container-navitation">
                                     <div class="container-button">
+                                        <button id="button-giveup" class="button-menu">Abandonner</button>
                                         <button id="button-next" class="button-menu" type="button" onClick="fonctionNext(${identifiant})">Suivant</button>
                                     </div>
-                                </div>`
+                                </div>`                            
         setTimeout(() => {
             container.appendChild(navigationDiv);
+            giveUp()           
         }, 100);
     } else {
-
         // Sinon, afficher la condition de sélectionner un bouton radio
         containerInfo = document.getElementById("form-information");
         containerInfo.setAttribute("class", "active");
