@@ -31,7 +31,7 @@ const prixSelectBurger              = containerSelectBurger.querySelector('.prix
 const prixSelectAccompagnement      = containerSelectAccompagnement.querySelector('.prix');
 const prixSelectBoisson             = containerSelectBoisson.querySelector('.prix');
 const prixSelectDessert             = containerSelectDessert.querySelector('.prix');
-
+const divPrixTotal                     = document.querySelector('#prix-total');
 // 2 - Fonction pour abandonner
 function giveUp() {
     buttonGiveup = document.getElementById("button-giveup");  

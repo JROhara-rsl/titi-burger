@@ -47,6 +47,12 @@ function majContainerSelection() {
         prixSelectAccompagnement.innerHTML = maCommande.accompagnement.prix;
         prixSelectBoisson.innerHTML = maCommande.boisson.prix;
         prixSelectDessert.innerHTML = maCommande.dessert.prix;
+
+        let prixTotal = parseInt(maCommande.burger.prix.slice(0, -1))
+                        + parseInt(maCommande.accompagnement.prix.slice(0, -1))
+                        + parseInt(maCommande.boisson.prix.slice(0, -1))
+                        + parseInt(maCommande.dessert.prix.slice(0, -1)); 
+        divPrixTotal.innerHTML = prixTotal + "€";    
     }
 }
   
