@@ -12,10 +12,10 @@ let buttonNext = document.getElementById("button-next");
 let buttonGiveup;
 let containerInfo = document.getElementById("form-information");
 
-const containerSelectBurger         = document.getElementById("container-select-burger");
-const containerSelectAccompagnement = document.getElementById("container-select-accompagnement");
-const containerSelectBoisson        = document.getElementById("container-select-boisson");
-const containerSelectDessert        = document.getElementById("container-select-dessert");
+const containerSelectBurger         = document.getElementById("container-select-1");
+const containerSelectAccompagnement = document.getElementById("container-select-2");
+const containerSelectBoisson        = document.getElementById("container-select-3");
+const containerSelectDessert        = document.getElementById("container-select-4");
 
 const imageSelectBurger             = document.getElementById('image-select-burger');
 const imageSelectAccompagnement     = document.getElementById('image-select-accompagnement');
@@ -87,13 +87,15 @@ function fonctionNext(identifiant){
         // Au bout de 3 itération sur l'identifiant, le menu est complet
         // Donc on passe à la commande :
         document.location.href="../html/commande.html";
-    } else if (inputSelected) {
+    } else if (menuId || inputSelected) {
         containerInfo.classList.remove('active');
 
         // Sélectionner et cacher la catégorie de menu précédente
         let nomContainerCache = "form-"+(identifiant);
         let containerCache = document.getElementById(nomContainerCache); 
-        containerCache.classList.remove('active');
+        if (containerCache) {
+            containerCache.classList.remove('active');
+        }
 
         // Sélectionner le formulaire correspondant à la catégorie de menu suivant
         identifiant = parseInt(identifiant)+1;
@@ -101,14 +103,8 @@ function fonctionNext(identifiant){
         container = document.getElementById(nomContainer);
         container.classList.add('active');
 
-        // Effet aggrandissement sur le container de sélection
-        /*const containerSelection = document.getElementById("container-selection");
-        const incrSelect = identifiant + 1;
-        console.log("incr="+incrSelect);
-        const containerSelect = containerSelection.childNodes[incrSelect];
-        console.log(containerSelect);
-        containerSelect.classList.add("active");*/
-
+        selectionActive(identifiant)
+        
         // Importer les articles de la bonne catégorie via la librairie JSON 
         fetch('../json/menu.json')
         .then(response => response.json())
@@ -137,6 +133,8 @@ function fonctionNext(identifiant){
         .catch(error => console.log("Erreur lors du chargement du fichier JSON :", error));
 
         createButtonSuivant(identifiant);
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
     } else {
         // Sinon, afficher la condition de sélectionner un bouton radio
         containerInfo = document.getElementById("form-information");
@@ -161,8 +159,9 @@ function createButtonSuivant(identifiant) {
             container = document.getElementById(nomContainer);
 
             container.appendChild(navigationDiv);
-            createButtonGiveUp()           
-        }, 100);                            
+            createButtonGiveUp()  
+                     
+        }, 400);                            
 }   
 
 // 5 - Créer un bouton abandonner
@@ -176,3 +175,39 @@ function createButtonGiveUp() {
         console.log(maCommande);
     })
 }
+
+// 6 - Bouton modifier commande
+function buttonModifyCommande(identifiant) {
+    document.location.href=`../html/clickcollect.html?id=${identifiant}`;
+}
+
+function getMenuIdFromUrl() {
+    const urlParams = new URLSearchParams(window.location.search);
+    const id = urlParams.get('id');
+    return id;
+}
+
+const menuId = getMenuIdFromUrl();
+
+if(menuId) {
+    containerIntro.setAttribute("class","desactive");
+    containerStart.setAttribute("class","desactive");
+    containerIntroForm.setAttribute("style", "display: flex;")
+
+    fonctionNext(menuId);
+}
+
+// 7 - Sélection active
+function selectionActive(identifiant) {
+    const containerSection = document.getElementById('container-selection');
+    const divSelected = containerSection.querySelector('.active');
+    if (divSelected) {
+        divSelected.classList.toggle("active");
+    }
+
+    // Activer aggrandissement sur le container sélectionné
+    const incrSelect = identifiant + 1;
+    const containerSelect = document.getElementById("container-select-"+incrSelect);
+    containerSelect.classList.toggle("active");
+}
+//selectionActive(0);

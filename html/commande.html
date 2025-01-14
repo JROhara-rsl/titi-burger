@@ -35,29 +35,29 @@
                         <h2>Récapitulatifs</h2>
                     </header>
                     
-                    <div id="container-select-burger" class="produit">
+                    <div id="container-select-1" class="produit">
                         <div id="image-select-burger" class="container-img"></div>
                         <h2></h2>
                         <div class="prix"></div>
-                        <button class="button-menu"  onClick="fonctionNext(0)">Modifier</button>
+                        <button class="button-menu"  onClick="buttonModifyCommande(-1)">Modifier</button>
                     </div>
-                    <div id="container-select-accompagnement"  class="produit">
+                    <div id="container-select-2"  class="produit">
                         <div id="image-select-accompagnement" class="container-img"></div>
                         <h2></h2>
                         <div class="prix"></div>
-                        <button class="button-menu" onClick="fonctionNext(1)">Modifier</button>
+                        <button class="button-menu" onClick="buttonModifyCommande(0)">Modifier</button>
                     </div>
-                    <div id="container-select-boisson" class="produit">
+                    <div id="container-select-3" class="produit">
                         <div id="image-select-boisson" class="container-img"></div>
                         <h2></h2>
                         <div class="prix"></div>
-                        <button class="button-menu" onClick="fonctionNext(2)">Modifier</button>
+                        <button class="button-menu" onClick="buttonModifyCommande(1)">Modifier</button>
                     </div>
-                    <div id="container-select-dessert" class="produit">
+                    <div id="container-select-4" class="produit">
                         <div id="image-select-dessert" class="container-img"></div>
                         <h2></h2>
                         <div class="prix"></div>
-                        <button class="button-menu" onClick="fonctionNext(3)">Modifier</button>
+                        <button class="button-menu" onClick="buttonModifyCommande(2)">Modifier</button>
                     </div>
                     <div id="prix-total"></div>
                 </div>
@@ -99,6 +99,7 @@
     <script src="https://kit.fontawesome.com/851065c4c4.js" crossorigin="anonymous"></script>
     <script src="../js/menu.js" type=""></script>
     <script src="../js/localstorage.js" type=""></script>
+    <script src="../js/modifymenu.js" type=""></script>
     
 </body>
 </html>
