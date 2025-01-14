@@ -496,6 +496,10 @@ nav .menu-button, .contenu-banner a {
     box-shadow: 0px 6px 10px -5px #000000;
 }
 
+#page-clickcollect .container-selection .child-item.active {
+    transform: scale(1.2);
+}
+
 #page-clickcollect .form-commencer {
     align-items: center !important;
     justify-content: center !important;
@@ -516,14 +520,14 @@ nav .menu-button, .contenu-banner a {
     color: white;
     font-family: 'Roboto', 'sans-serif';
     font-size: 2rem;
+    border-radius: 15px;
+    cursor: pointer;
     transition: background-color 0.1s ease-in, 
-                border 0.1s ease-in, 
-                border-radius 0.1s ease-in;
+                opacity 0.1s ease-in;
 }
 
 .button-menu:hover {
-    border: 8px solid var(--color-bleu);
-    border-radius: 20px;
+    opacity: 0.8;   
 }
 
 .button-menu:active {
@@ -687,12 +691,23 @@ nav .menu-button, .contenu-banner a {
     display: flex;
     flex-direction: row;
     align-items: center;
+    margin: 20px 0 0;
 }
 
 #form-information {
     text-align: center;
     color: var(--color-base);
     display: none;
+    margin: 10px 0;
+}
+
+/* --------------------------------- PARTIE COMMANDE ------------ */
+
+#partie-commande .button-menu {
+    font-size: 1.2rem;
+    width: 120px;
+    height: 50px;
+    margin: 0;
 }
 
 /* //////////////////////////////////////////////////     FOOTER      ////////////////////// */
