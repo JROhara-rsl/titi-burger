@@ -9,7 +9,7 @@
                     "id": "dark-burger",
                     "price": "13",
                     "image": "./assets/images/hamburger-noir.jpg",
-                    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Enim mi at ultrices praesent posuere sit. Pulvinar.",
+                    "description": "Un burger audacieux, avec un pain noir moelleux et des saveurs intenses. Idéal pour les amateurs de caractère.",
                     "__v": 0
                 },
                 {  
@@ -17,7 +17,7 @@
                     "id": "original-titi",
                     "price": "12",
                     "image": "./assets/images/hamburger-cheese.jpg",
-                    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Enim mi at ultrices praesent posuere sit. Pulvinar.",
+                    "description": "Notre classique incontournable, avec un steak juteux, des légumes frais et une sauce maison.",
                     "__v": 0
                 },
                 {  
@@ -25,14 +25,14 @@
                     "id": "veggie-burger",
                     "price": "11.5",
                     "image": "./assets/images/hamburger-vegetal.jpg",
-                    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Enim mi at ultrices praesent posuere sit. Pulvinar."
+                    "description": "Une option végétarienne gourmande, avec un délicieux steak de légumes et des ingrédients frais."
                 },
                 {  
                     "nom": "Le Big Big",
                     "id": "big-big",
                     "price": "14",
                     "image": "./assets/images/hamburger-double.jpg",
-                    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Enim mi at ultrices praesent posuere sit. Pulvinar.",
+                    "description": "Pour les grandes faims : double steak, double fromage, et un plaisir décuplé.",
                     "__v": 0
                 }
             ]
@@ -45,7 +45,7 @@
                     "id": "frites",
                     "price": "3.5",
                     "image": "./assets/images/frites.jpg",
-                    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Enim mi at ultrices praesent posuere sit. Pulvinar.",
+                    "description": "Dorées et croustillantes, nos frites maison accompagnent parfaitement tous nos burgers.",
                     "__v": 0
                 },
                 {  
@@ -53,7 +53,7 @@
                     "id": "frites-patates-douces",
                     "price": "4.5",
                     "image": "./assets/images/frites-patate-douce.jpg",
-                    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Enim mi at ultrices praesent posuere sit. Pulvinar.",
+                    "description": "Une alternative douce et savoureuse, légèrement sucrée et toujours croustillante.",
                     "__v": 0
                 },
                 {  
@@ -61,7 +61,7 @@
                     "id": "salade",
                     "price": "4.5",
                     "image": "./assets/images/salade.jpg",
-                    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Enim mi at ultrices praesent posuere sit. Pulvinar.",
+                    "description": "Une salade fraîche et croquante, parfaite pour un repas léger ou en accompagnement.",
                     "__v": 0
                 },
                 {  
@@ -69,7 +69,7 @@
                     "id": "mais-frit",
                     "price": "5",
                     "image": "./assets/images/mais.jpg",
-                    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Enim mi at ultrices praesent posuere sit. Pulvinar.",
+                    "description": "Un délice croquant et légèrement épicé, parfait pour accompagner vos plats préférés.",
                     "__v": 0
                 }
             ]
@@ -82,7 +82,7 @@
                     "id": "jus-citron",
                     "price": "3",
                     "image": "./assets/images/limonade.jpg",
-                    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Enim mi at ultrices praesent posuere sit. Pulvinar.",
+                    "description": "Un jus frais et acidulé, idéal pour une touche de fraîcheur.",
                     "__v": 0
                 },
                 {  
@@ -90,7 +90,7 @@
                     "id": "coca-cola",
                     "price": "2.5",
                     "image": "./assets/images/coca-cola.jpg",
-                    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Enim mi at ultrices praesent posuere sit. Pulvinar.",
+                    "description": "La boisson pétillante classique qui s’accorde avec tous nos burgers.",
                     "__v": 0
                 },
                 {  
@@ -98,7 +98,7 @@
                     "id": "limonade-menthe",
                     "price": "3",
                     "image": "./assets/images/limonade-menthe.jpg",
-                    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Enim mi at ultrices praesent posuere sit. Pulvinar.",
+                    "description": "Un mélange rafraîchissant de citron et de menthe pour une boisson légère.",
                     "__v": 0
                 },
                 {  
@@ -106,7 +106,7 @@
                     "id": "jus-pomme",
                     "price": "3",
                     "image": "./assets/images/jus-de-pomme.jpeg",
-                    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Enim mi at ultrices praesent posuere sit. Pulvinar.",
+                    "description": "Un jus doux et fruité, parfait pour accompagner votre repas.",
                     "__v": 0
                 }
             ]
@@ -119,7 +119,7 @@
                     "id": "muffins",
                     "price": "3.5",
                     "image": "./assets/images/muffin.jpg",
-                    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Enim mi at ultrices praesent posuere sit. Pulvinar.",
+                    "description": "Moelleux et gourmands, nos muffins sont parfaits pour une pause sucrée.",
                     "__v": 0
                 },
                 {  
@@ -127,7 +127,7 @@
                     "id": "tiramisu",
                     "price": "5",
                     "image": "./assets/images/tiramisu.jpg",
-                    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Enim mi at ultrices praesent posuere sit. Pulvinar.",
+                    "description": "Un dessert italien classique revisité, avec une touche Titi Burger.",
                     "__v": 0
                 },
                 {  
@@ -135,7 +135,7 @@
                     "id": "gaufres",
                     "price": "3",
                     "image": "./assets/images/gauffres.jpg",
-                    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Enim mi at ultrices praesent posuere sit. Pulvinar.",
+                    "description": "Des gaufres légères et croustillantes, servies avec un nappage gourmand.",
                     "__v": 0
                 },
                 {  
@@ -143,7 +143,7 @@
                     "id": "pancakes",
                     "price": "3",
                     "image": "./assets/images/pancakes.jpg",
-                    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Enim mi at ultrices praesent posuere sit. Pulvinar.",
+                    "description": "Des pancakes moelleux et légers, parfaits pour une fin de repas sucrée.",
                     "__v": 0
                 }
             ]

@@ -166,7 +166,7 @@ nav.font-white li a {
 }
 
 nav li a:hover {
-    color: var(--color-rose);
+    color: var(--color-base);
     text-decoration: none;
 }
 

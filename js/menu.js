@@ -202,12 +202,13 @@ function selectionActive(identifiant) {
     const containerSection = document.getElementById('container-selection');
     const divSelected = containerSection.querySelector('.active');
     if (divSelected) {
-        divSelected.classList.toggle("active");
+        divSelected.classList.remove("active");
     }
 
     // Activer aggrandissement sur le container sélectionné
     const incrSelect = identifiant + 1;
     const containerSelect = document.getElementById("container-select-"+incrSelect);
-    containerSelect.classList.toggle("active");
+    if (containerSelect) {
+        containerSelect.classList.add("active");
+    }
 }
-//selectionActive(0);
