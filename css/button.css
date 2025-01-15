@@ -1,0 +1,81 @@
+/* ------------------------------ GENERAL ------------------------ */
+
+button {
+    padding: 12px 20px;
+    border-radius: 10px;
+}
+
+.button-menu {
+    display: block;
+    width: 100%;
+    max-width: 456px;
+    margin: 0 auto;
+    padding: 20px 10px;
+    border-radius: 10px;
+
+    background-color: var(--color-base);
+    border: 0px solid var(--color-bleu);
+    color: white;
+
+    font-family: 'Roboto', 'sans-serif';
+    font-size: 2rem;
+    text-align: center;
+    text-decoration: none;
+    
+    cursor: pointer;
+    transition: background-color 0.1s ease-in;
+}
+
+.button-menu:hover {
+    background-color: var(--color-base-obs);   
+}
+
+.button-menu:active {
+    background-color: var(--color-bleu-sombre);
+}
+
+
+
+
+nav .menu-button, .contenu-banner a { 
+    padding: 12px 20px;
+    border-radius: 4px;
+    color: white;
+    background-color: var(--color-base);
+    text-decoration: none;
+}
+
+nav .menu-button:hover {
+    color: var(--color-bleu);
+}
+
+
+.container-grid .child-grid button {
+    background-color: var(--color-sombre);
+    color: white;
+}
+
+/* ------------------------------ NEWSLETTER ------------------------ */
+
+#partie-bloc .container form .newsletter-input button {
+    width: 80px;
+    height: 72px;
+    background-color: var(--color-base);
+    border: none;
+}
+
+#partie-bloc .container form .newsletter-input button i {
+    font-size: 1.8rem;
+    color: white; 
+}
+
+
+
+
+
+#partie-commande .button-menu {
+    font-size: 1.2rem;
+    width: 120px;
+    margin: 0;
+    padding: 20px 5px; 
+}

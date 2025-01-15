@@ -2,6 +2,7 @@
 
 :root { 
 	--color-base: #D9ADD6;
+    --color-base-obs: #c38dbf;
     --color-gris-clair: #D9D9D9;
     --color-gris: #979797;
     --color-sombre: #4A4C50;
@@ -84,11 +85,6 @@ p {
     margin: 10px 0;
 }
 
-button {
-    padding: 12px 20px;
-    border-radius: 4px;
-}
-
 .container  {
     display: flex;
     flex-direction: column;
@@ -167,14 +163,6 @@ nav.font-white li a {
 
 nav li a:hover {
     color: var(--color-base);
-    text-decoration: none;
-}
-
-nav .menu-button, .contenu-banner a { 
-    padding: 12px 20px;
-    border-radius: 4px;
-    color: white;
-    background-color: var(--color-base);
     text-decoration: none;
 }
 
@@ -355,10 +343,6 @@ nav .menu-button, .contenu-banner a {
     text-align: center;
 }
 
-.container-grid .child-grid button {
-    background-color: var(--color-sombre);
-    color: white;
-}
 
 /* //////// -----------     NEWSLETTER     ---------- */
 
@@ -408,18 +392,6 @@ nav .menu-button, .contenu-banner a {
     padding: 0 20px;
     font-size: 1.1rem;
     color: var(--color-gris-clair);
-}
-
-#partie-bloc .container form .newsletter-input button {
-    width: 80px;
-    height: 72px;
-    background-color: var(--color-base);
-    border: none;
-}
-
-#partie-bloc .container form .newsletter-input button i {
-    font-size: 1.8rem;
-    color: white; 
 }
 
 #partie-bloc h2 {
@@ -487,7 +459,7 @@ nav .menu-button, .contenu-banner a {
     transition: all 0.3s ease-in;
 }
 
-#page-clickcollect .container-selection .child-item:hover {
+#page-clickcollect .container-selection .child-item:hover .container-img {
     transform: scale(1.1);
 }
 
@@ -506,6 +478,7 @@ nav .menu-button, .contenu-banner a {
     background-position: center;
     -webkit-box-shadow: 0px 6px 10px -5px #000000; 
     box-shadow: 0px 6px 10px -5px #000000;
+    transition: all 0.3s ease-in;
 }
 
 #page-clickcollect .form-commencer {
@@ -516,30 +489,6 @@ nav .menu-button, .contenu-banner a {
 #form-navigation {
     display: flex;
     align-items: center;
-}
-
-.button-menu {
-    width: 100%;
-    max-width: 456px;
-    height: 90px;
-    margin: 0 auto;
-    background-color: var(--color-base);
-    border: 0px solid var(--color-bleu);
-    color: white;
-    font-family: 'Roboto', 'sans-serif';
-    font-size: 2rem;
-    border-radius: 15px;
-    cursor: pointer;
-    transition: background-color 0.1s ease-in, 
-                opacity 0.1s ease-in;
-}
-
-.button-menu:hover {
-    opacity: 0.8;   
-}
-
-.button-menu:active {
-    background-color: var(--color-bleu-sombre);
 }
 
 #section-nav {      margin: 0;     }
@@ -686,11 +635,32 @@ nav .menu-button, .contenu-banner a {
     margin-bottom: 50px;
 }
 
-#partie-commande #prix-total {
-    float: right;
-    font-size: 1.5rem;
-    font-weight: 500;
+/* -------------- PARTIE PAYEMENT --------------- */
+
+#partie-payement #container-prix {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+#partie-payement #container-prix img {
+    max-width: 65px;
+}
+
+
+#partie-payement #prix-total {
+    font-size: 1.8rem;
+    font-weight: 700;
     margin: 5px 25px;
+}
+
+#partie-payement .container-button {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin: 20px 0;
 }
 
 /* --------------------------------- NAVIGATION FORMULAIRE ------------ */
@@ -711,12 +681,6 @@ nav .menu-button, .contenu-banner a {
 
 /* --------------------------------- PARTIE COMMANDE ------------ */
 
-#partie-commande .button-menu {
-    font-size: 1.2rem;
-    width: 120px;
-    height: 50px;
-    margin: 0;
-}
 
 /* //////////////////////////////////////////////////     FOOTER      ////////////////////// */
 
@@ -737,7 +701,7 @@ footer .container {
 footer ul {
     list-style-type: none;    
     margin: 0;
-    padding: 0;
+    padding: 0 10px;
 }
 
 footer li {
