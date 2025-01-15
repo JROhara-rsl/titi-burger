@@ -3,16 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Paiement - Titi Burger</title>
+    <title>Payement - Titi Burger</title>
     <link rel="stylesheet" type="text/css" href="../css/style.css">
+    <link rel="stylesheet" type="text/css" href="../css/payement.css">
     <link rel="stylesheet" type="text/css" href="../css/button.css">
     <link rel="stylesheet" type="text/css" href="../css/mediaqueries.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
 </head>
-<body id="page-commande">
-    
+<body id="page-payement">   
     <header>
         <nav>
             <div class="container">
@@ -29,10 +29,38 @@
         </nav>
     </header>
     <main>
-        <section id="partie-paiement">
-            <div class="form-menu">    
-                <div class="container-selection">
-
+        <section id="partie-payement">
+            <div>
+                <div id="numero-commande">
+                    Commande <span>TITI03FTP092201</span>
+                </div>
+                <div>
+                    <h1>Click & collect</h1>
+                    <h2>Commander et déguster</h2>
+                </div>
+            </div>
+            <div>
+                <form id="moyenPayement">
+                    <label id="paypal" for="paypal">
+                        <input type="radio" name="moyen-payement" value="paypal">
+                        <img src="../assets/images/paypal.svg" alt="Payement paypal">
+                        <span>PayPal</span>
+                    </label>
+                    <label id="visa" for="visa">
+                        <input type="radio" name="moyen-payement" value="visa">
+                        <img src="../assets/images/visa.png" alt="Payement visa">
+                        <span>Visa</span>
+                    </label>
+                    <label id="bitcoin" for="bitcoin">
+                        <input type="radio" name="moyen-payement" value="bitcoin">
+                        <img src="../assets/images/bitcoin.png" alt="Payement bitcoin">
+                        <span>Bitcoin</span>
+                    </label>
+                    <button id="button-payement" class="button-menu">Valider</button>
+                </form>
+                <div id="promo">
+                    <p>Promo Pour votre prochaine commande</p>
+                    <img src="../assets/images/promo.jpg" alt="Prochaine promo Titi Burger">
                 </div>
             </div>
         </section>
@@ -70,8 +98,6 @@
         </footer>
     </main>
     <script src="https://kit.fontawesome.com/851065c4c4.js" crossorigin="anonymous"></script>
-    <script src="../js/menu.js" type=""></script>
-    <script src="../js/localstorage.js" type=""></script>
     
 </body>
 </html>

@@ -105,18 +105,19 @@ section {
 header {
     width: 100%;   
     height: auto;
-    margin-bottom: 70px;
+    margin-bottom: 50px;
     z-index: 5;
 }
 
 nav {
     position: absolute;
-    width: 100%;
+    width: 98%;
     z-index: 2;
-    padding: 15px 0px;
+    padding: 14px 0px;
+    margin: 0 1%;
 }
 
-#page-commande nav {
+#page-commande nav, #page-payement nav {
     position: relative;
 }
 
@@ -635,27 +636,27 @@ nav li a:hover {
     margin-bottom: 50px;
 }
 
-/* -------------- PARTIE PAYEMENT --------------- */
+/* -------------- NAVIGATION COMMANDE --------------- */
 
-#partie-payement #container-prix {
+#navigation-commande #container-prix {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: flex-end;
 }
 
-#partie-payement #container-prix img {
+#navigation-commande #container-prix img {
     max-width: 65px;
 }
 
 
-#partie-payement #prix-total {
+#navigation-commande #prix-total {
     font-size: 1.8rem;
     font-weight: 700;
     margin: 5px 25px;
 }
 
-#partie-payement .container-button {
+#navigation-commande .container-button {
     display: flex;
     flex-direction: row;
     align-items: center;

@@ -43,6 +43,7 @@ nav .menu-button, .contenu-banner a {
     color: white;
     background-color: var(--color-base);
     text-decoration: none;
+    transition: color 0.1s ease;
 }
 
 nav .menu-button:hover {
