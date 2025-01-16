@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Payement - Titi Burger</title>
+    <title>COmmande terminé - Titi Burger</title>
     <link rel="stylesheet" type="text/css" href="../css/style.css">
     <link rel="stylesheet" type="text/css" href="../css/payement.css">
     <link rel="stylesheet" type="text/css" href="../css/button.css">
@@ -39,54 +39,13 @@
                     <h2>Commander et déguster</h2>
                 </div>
             </div>
-            <div>
-                <div id="formulaires">
-                    <form id="form-payement" class="formulaire">
-                        <label id="label-paypal" for="paypal">
-                            <input id="paypal" type="radio" name="moyen-payement" value="paypal">
-                            <img src="../assets/images/paypal.svg" alt="Payement paypal">
-                            <span>PayPal</span>
-                        </label>
-                        <label id="label-visa" for="visa">
-                            <input id="visa" type="radio" name="moyen-payement" value="visa">
-                            <img src="../assets/images/visa.png" alt="Payement visa">
-                            <span>Visa</span>
-                        </label>
-                        <label id="label-bitcoin" for="bitcoin">
-                            <input id="bitcoin" type="radio" name="moyen-payement" value="bitcoin">
-                            <img src="../assets/images/bitcoin.png" alt="Payement bitcoin">
-                            <span>Bitcoin</span>
-                        </label>
-                        <button id="button-payement" class="button-menu">Valider</button>
-                    </form>
-                    <form id="form-card" class="formulaire desactive">
-                        <label id="label-nom" for="nom">
-                            Nom : 
-                            <input id="nom" type="text" name="nom" required>
-                        </label>
-                        <label id="label-numero" for="numero">
-                            Tel. : 
-                            <input id="numero" type="numero" name="numero" required>
-                        </label>
-                        <label id="label-date" for="date" class="demi" >
-                            Date d'expiration : 
-                            <input id="date" type="date" name="date" required>
-                        </label>
-                        <label id="label-crypto" for="crypto" class="demi">
-                            N°Crypto : 
-                            <input id="crypto" type="number" name="crypto" required>
-                        </label>
-                        <button id="button-payer" class="button-menu" type="submit">Payer</button>
-                    </form>
-                    <div id="form-information">Veillez sélectionner un moyen de paiement</div>
-                </div>
-                <div id="promo">
-                    <p>Promo Pour votre prochaine commande</p>
-                    <img src="../assets/images/promo.jpg" alt="Prochaine promo Titi Burger">
-                </div>
+            <div id="container-text">
+                <div>Merci pour votre commande</div>
+                <span>Vous pouvez venir la chercher à :</span>
+                <span id="horaire">12H45</span>
             </div>
-        </section>
-        <footer id="partie-contact">
+        </section>   
+        <footer>
             <div>
                 <div class="container">
                     <ul>
@@ -121,6 +80,5 @@
     </main>
     <script src="https://kit.fontawesome.com/851065c4c4.js" crossorigin="anonymous"></script>
     <script src="../js/commande.js"></script>
-    <script src="../js/nav-payer.js"></script>
 </body>
 </html>

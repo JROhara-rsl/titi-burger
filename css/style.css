@@ -702,6 +702,33 @@ input[type="radio"]:after {
 }
 
 
+/* --------------------------------- PARTIE TERMINER ------------ */
+
+#container-text {
+    height: 50vh;
+    flex-direction: column !important;
+    justify-content:center !important;
+    gap: 30px !important;
+
+    font-size: 1.5rem;
+    font-weight: 500;    
+}
+
+#container-text div {
+    width: fit-content;
+    padding: 10px 20px;
+    font-size: 1.7rem;
+    font-weight: 500;
+    color: var(--color-sombre);
+    background-color: var(--color-gris-clair);
+}
+
+#container-text #horaire {
+    font-size: 2rem;
+}
+
+
+
 /* //////////////////////////////////////////////////     FOOTER      ////////////////////// */
 
 footer {
