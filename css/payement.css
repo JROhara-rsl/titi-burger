@@ -12,10 +12,15 @@
     align-items: center;
     justify-content: space-between;
     gap: 50px;
+    margin: 0 20px;
 }
 
 #partie-payement > div:first-child {
     border-bottom: 4px dotted var(--color-bleu);
+}
+
+#partie-payement #titres {
+    margin: 10px 0;
 }
 
 #partie-payement h1 {
@@ -29,31 +34,84 @@
     font-size: 1.5rem;
 }
 
-#partie-payement #moyenPayement {
+#partie-payement #formulaires {
     width: 60%;
     display: flex;
     flex-direction: column;
     margin: 10px 0
 }
 
-#partie-payement #moyenPayement label {
+#partie-payement .formulaire label {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
     gap: 40px;
-    padding: 50px 20% 50px 0;
+    
+    cursor: pointer;
+}
 
+#partie-payement #form-payement label {
+    padding: 50px 20% 50px 0;
     border-bottom: 4px dotted var(--color-bleu);
 }
 
-#partie-payement #moyenPayement img, #partie-payement #moyenPayement svg {
+#partie-payement .formulaire label:hover img {
+    opacity: 0.6;
+}
+
+#partie-payement .formulaire label:active {
+    background-color: var(--color-gris-clair);
+}
+
+#partie-payement .formulaire label span {
+    display: block;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 500;
+    width: 100px;
+    text-align: center;
+    color: var(--color-sombre);
+}
+
+#partie-payement .formulaire img, #partie-payement .formulaire svg {
     height: 60px;
 }
 
-#partie-payement #moyenPayement button {
+#partie-payement .formulaire button {
     margin: 20px 0;
 }
+
+#partie-payement .formulaire.desactive {
+    display: none;
+}
+
+#form-card {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+#form-card label {
+    padding: 20px 20px;
+    background-color: var(--color-gris-tr-clair);
+    
+    width: 100%;
+}
+
+#form-card label.demi {
+    width: 43%;
+}
+
+#form-card input {
+    width: 50%;
+    padding: 15px 10px;
+    border: none;
+}
+
+
+
+/* ---------------------------- PROMO ---------------------- */
 
 #promo {
     max-width: 450px;
@@ -74,6 +132,8 @@
 }
 
 
+
+
 /* //////////////////////////////////////////////////     MEDIA QUERIES      ////////////////////// */
 
 /* /////////////////////////////////////////////// 960px //////////////// */
@@ -83,7 +143,7 @@
         flex-direction: column;
     }
 
-    #partie-payement #moyenPayement {
+    #partie-payement .formulaire {
         width: 100%;
     }
 }

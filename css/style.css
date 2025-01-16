@@ -3,6 +3,7 @@
 :root { 
 	--color-base: #D9ADD6;
     --color-base-obs: #c38dbf;
+    --color-gris-tr-clair: #f6f6f6;
     --color-gris-clair: #D9D9D9;
     --color-gris: #979797;
     --color-sombre: #4A4C50;
@@ -595,15 +596,19 @@ nav li a:hover {
     object-fit: cover;
 }
 
-.partie-produit .form-menu .produit input[type="radio"] {
+input[type="radio"] {
     width: 35px;
     height: 35px;
     border: 6px solid var(--color-bleu);
 }
 
-.partie-produit .form-menu .produit input[type="radio"]:checked {
+input[type="radio"]:checked {
     border: 6px solid var(--color-bleu);
     background-color: var(--color-bleu);
+}
+
+input[type="radio"]:after {
+    background-color: var(--color-base);
 }
 
 .partie-produit .form-menu .produit p, .partie-produit .produit h2 {
@@ -683,12 +688,27 @@ nav li a:hover {
 /* --------------------------------- PARTIE COMMANDE ------------ */
 
 
+#numero-commande {
+    width: fit-content;
+    padding: 10px 20px;
+    font-size: 1.7rem;
+    font-weight: 500;
+    color: var(--color-gris);
+    background-color: var(--color-gris-clair);
+}
+
+#num-commande {
+    text-transform: uppercase;
+}
+
+
 /* //////////////////////////////////////////////////     FOOTER      ////////////////////// */
 
 footer {
     width: 100%;
     background: var(--color-bleu-sombre);
     color: white;
+    margin-top: 30px;
 }
 
 footer .container {

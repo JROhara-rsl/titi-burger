@@ -29,35 +29,57 @@
         </nav>
     </header>
     <main>
-        <section id="partie-payement">
+        <section id="partie-payement" class="container">
             <div>
                 <div id="numero-commande">
-                    Commande <span>TITI03FTP092201</span>
+                    Commande <span id="num-commande">TITI03FTP092201</span>
                 </div>
-                <div>
+                <div id="titres">
                     <h1>Click & collect</h1>
                     <h2>Commander et déguster</h2>
                 </div>
             </div>
             <div>
-                <form id="moyenPayement">
-                    <label id="paypal" for="paypal">
-                        <input type="radio" name="moyen-payement" value="paypal">
-                        <img src="../assets/images/paypal.svg" alt="Payement paypal">
-                        <span>PayPal</span>
-                    </label>
-                    <label id="visa" for="visa">
-                        <input type="radio" name="moyen-payement" value="visa">
-                        <img src="../assets/images/visa.png" alt="Payement visa">
-                        <span>Visa</span>
-                    </label>
-                    <label id="bitcoin" for="bitcoin">
-                        <input type="radio" name="moyen-payement" value="bitcoin">
-                        <img src="../assets/images/bitcoin.png" alt="Payement bitcoin">
-                        <span>Bitcoin</span>
-                    </label>
-                    <button id="button-payement" class="button-menu">Valider</button>
-                </form>
+                <div id="formulaires">
+                    <form id="form-payement" class="formulaire">
+                        <label id="label-paypal" for="paypal">
+                            <input id="paypal" type="radio" name="moyen-payement" value="paypal">
+                            <img src="../assets/images/paypal.svg" alt="Payement paypal">
+                            <span>PayPal</span>
+                        </label>
+                        <label id="label-visa" for="visa">
+                            <input id="visa" type="radio" name="moyen-payement" value="visa">
+                            <img src="../assets/images/visa.png" alt="Payement visa">
+                            <span>Visa</span>
+                        </label>
+                        <label id="label-bitcoin" for="bitcoin">
+                            <input id="bitcoin" type="radio" name="moyen-payement" value="bitcoin">
+                            <img src="../assets/images/bitcoin.png" alt="Payement bitcoin">
+                            <span>Bitcoin</span>
+                        </label>
+                        <button id="button-payement" class="button-menu">Valider</button>
+                    </form>
+                    <form id="form-card" class="formulaire desactive">
+                        <label id="label-nom" for="nom">
+                            Nom : 
+                            <input id="nom" type="text" name="nom" required>
+                        </label>
+                        <label id="label-numero" for="numero">
+                            Tel. : 
+                            <input id="numero" type="numero" name="numero" required>
+                        </label>
+                        <label id="label-date" for="date" class="demi" >
+                            Date d'expiration : 
+                            <input id="date" type="date" name="date" required>
+                        </label>
+                        <label id="label-crypto" for="crypto" class="demi">
+                            N°Crypto : 
+                            <input id="crypto" type="number" name="crypto" required>
+                        </label>
+                        <button id="button-payer" class="button-menu">Payer</button>
+                    </form>
+                    <div id="form-information">Veillez sélectionner un moyen de paiement</div>
+                </div>
                 <div id="promo">
                     <p>Promo Pour votre prochaine commande</p>
                     <img src="../assets/images/promo.jpg" alt="Prochaine promo Titi Burger">
@@ -98,6 +120,6 @@
         </footer>
     </main>
     <script src="https://kit.fontawesome.com/851065c4c4.js" crossorigin="anonymous"></script>
-    
+    <script src="../js/commande.js"></script>
 </body>
 </html>
